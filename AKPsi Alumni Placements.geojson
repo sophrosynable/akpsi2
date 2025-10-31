@@ -1,0 +1,594 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ronald Liu Jr",
+        "Company": "KPMG",
+        "City": "San Mateo",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFvjYw4njJhAPNofEmg7eF6_61TQxlmHEOw&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.313057,
+          37.554169
+        ],
+        "type": "Point"
+      },
+      "id": "121a5bef4e0bafa02208bb965c83271e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Amy Li",
+        "Company": "Clarion Partners LLC",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://res.cloudinary.com/cais/image/upload/v1692902101/pws/logos/Asset%20manager%20icons/Clarion-Partners-Logo-stacked-positive-RGB_e78fi5.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "2d51f09e3601fa01931bfb3734a568c0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Derek Lee",
+        "Company": "Carrier",
+        "City": "Florida",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://images.carriercms.com/image/upload/h_400/v1576864343/common/logos/carrier-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.760254,
+          27.994402
+        ],
+        "type": "Point"
+      },
+      "id": "3f37f019a56bc938989dbc7256724716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Matthew Bow",
+        "Company": "Blackstone",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/The_Blackstone_Group_logo_%282%29.svg/2560px-The_Blackstone_Group_logo_%282%29.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "458ef5dff9cc74ac8503db18c06d0c85"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Daniel Wang",
+        "Company": "TikTok",
+        "City": "Seattle",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://sydneyaimeetup.org/img/sponsor/TikTok-logo-CMYK-Horizontal-Black.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.335167,
+          47.608013
+        ],
+        "type": "Point"
+      },
+      "id": "4ca2a83fb3cc1db56f82db2b4617b40f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nicholas Lee",
+        "Company": "Citizens JMP",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://mms.businesswire.com/media/20211115006284/en/415566/4/CFG_Inc_TM_c.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "4cb750a3e22b814dd15487ecb78b3eb2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mark Ryan",
+        "Company": "Amazon",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "4f78b1ba02fc26698495357e7faea3dd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Dev Pereira",
+        "Company": "EY",
+        "City": "Chicago",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/EY_logo_2019.svg/1200px-EY_logo_2019.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.623177,
+          41.881832
+        ],
+        "type": "Point"
+      },
+      "id": "51054f6bfbdd3bfa872c62df69e65eaf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Christiana Kalotihos",
+        "Company": "Tracksmith",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://www.blacktoerunning.com/cdn/shop/files/Tracksmoith_Logo_BLK_crop-2_1400px_1080x.jpg?v=1664299614"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "523ed9e1a21b1ab3a1953e5356618e60"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Julian Ramcharan",
+        "Company": "US Bank",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGTHhTdyWLT4n_p89LhnXcYIHztRFegGYQkQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "5305a5e43a15697b1f28e15d6fdb7850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hannah Wu",
+        "Company": "SAMY",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://cdn.shopify.com/s/files/1/0580/1813/6164/files/SAMY_Logotipo_2.png?height=628&pad_color=fff&v=1651584778&width=1200"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "58d477037ade7696137a5b3cc565e818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Rachel Ip",
+        "Company": "Bank of America",
+        "City": "Los Angeles",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bank_of_America_logo.svg/2560px-Bank_of_America_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.243683,
+          34.052235
+        ],
+        "type": "Point"
+      },
+      "id": "5f53dd57fbb2053cc286d1e43db38160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aishwarya Suresh",
+        "Company": "Morgan Stanley",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Morgan_Stanley_Logo_1.svg/1024px-Morgan_Stanley_Logo_1.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "675f8cbbbe6b1d1c804e914f6ec33e54"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bambi Nandabhiwat",
+        "Company": "Deloitte",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Consulting",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_Deloitte.svg/1200px-Logo_of_Deloitte.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "75160f75559f7560f1cb4a0d09c3ca4f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Luvish Gupta",
+        "Company": "BlackRock",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://logos-world.net/wp-content/uploads/2023/02/BlackRock-Logo.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "7656ff6d0587f77be1c978e6f898b1df"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sergio Avila ",
+        "Company": "PIMCO",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/PIMCO_Logo.svg/1280px-PIMCO_Logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "8358f8ff1f6a8978297027f2855166d5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Annie Yang",
+        "Company": "Suvoda",
+        "City": "Cupertino",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/qmuivqwlbm3btagexora?ik-sanitizeSvg=true"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.0385,
+          37.3172
+        ],
+        "type": "Point"
+      },
+      "id": "883bbcc13c336d1e82f1c60da3293165"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kristina Yu",
+        "Company": "Benefit Cosmetics",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://diversityjobsgroup.com/wp-content/uploads/2024/01/Benefit_Wordmark_RGB_BenefitPink-1.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "89f2bb31cb7ceb467d6745e213b8974f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aryan Goyanka",
+        "Company": "Millenium Global Investment",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://www.mlp.com/wp-content/uploads/2024/03/logo-mlp.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "93596dd0fffba8d6b1fb66d93c9b986d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aaron Zhu",
+        "Company": "Spotify",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Green.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "97bc1a54a5711b7a195896574c0ac670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sumair Sen",
+        "Company": "Microsoft Azure",
+        "City": "Seattle",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/2560px-Microsoft_Azure_Logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.335167,
+          47.608013
+        ],
+        "type": "Point"
+      },
+      "id": "9aab345e8d65ffd7a7e6ccbac992b776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Justine Prophill",
+        "Company": "DELL",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/1200px-Dell_Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "9ab8f05ba67700689d8798f692321fbc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Madison Roberts",
+        "Company": "Invesco",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://cdn.cookielaw.org/logos/e3ce9302-37fb-4a9f-9d3a-8dd0d1946f17/d892f2dd-7cb7-4f70-aaf5-f48b2cc031aa/6a84c712-2e1e-4ed7-9f5f-5c8f1a4052a2/invesco1.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "9fa102c00ba72b3e4bd2f8339e1dd6a9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Amaya Ghoshal",
+        "Company": "Goldman Sachs",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://1000logos.net/wp-content/uploads/2016/12/Goldman-Sachs-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "a83a729b25eaa0a9f648ba3aa9010406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Choying Dechen",
+        "Company": "Analytic Partners",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/e9e686ec8a8249eda1eb028692d14453?ik-sanitizeSvg=true"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "b5ec5b7d32731eba523853ebf36684d7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kate Zhong",
+        "Company": "Kaseya",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Kaseya_Limited.svg/2560px-Logo_of_Kaseya_Limited.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "b64f8bd76460d02bec7168688a88fe7c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Todd Amatayakul",
+        "Company": "McKinsey & Company",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Consulting",
+        "Logo": "https://cdn.cookielaw.org/logos/353d36fb-3a1c-4021-b831-ee6d50361d6a/07a8989e-cba1-4f60-a67a-0ffe9efc1b3a/5705935c-c99f-48d8-8aef-b78127f4aed3/mckinsey---company_owler_20190728_090718_original.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "ba9c04d0cc37c03600199abc550484f1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Thomas Borenholtz ",
+        "Company": "UCO TRADING SPAIN SL",
+        "City": "Miami",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://usedoilco.com/wp-content/uploads/2023/10/LOGO-10-YEARS-UCO-foot.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.191788,
+          25.761681
+        ],
+        "type": "Point"
+      },
+      "id": "c94b520fbb85dcb6cd52e990c8687a35"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Christina Chen",
+        "Company": "Experian",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Experian_logo.svg/2560px-Experian_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "e3a918156a1931a2da099d9cb527681a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aiko Saeki",
+        "Company": "Boston Consulting Group",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Consulting",
+        "Logo": "https://web-assets.bcg.com/dims4/default/a7425a2/2147483647/strip/true/crop/432x109+0+0/resize/768x194!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2Fcf%2F56%2F37f3302740138f48fea36a8a41b7%2Ftest-bcg-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "edb5bef3d153d627e1b169f088a819f6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nicholas Cho",
+        "Company": "Calbee",
+        "City": "Fairfield",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Calbee_logo.svg/1280px-Calbee_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.271111,
+          41.146496
+        ],
+        "type": "Point"
+      },
+      "id": "fe5d71339522936e754b89a424ba0e20"
+    }
+  ],
+  "type": "FeatureCollection"
+}
