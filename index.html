@@ -66,7 +66,16 @@
     </div>
   `;
 }
-
+    // right after you create the popup, inject a tiny style reset
+new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
+  .setLngLat(f.geometry.coordinates)
+  .setHTML(
+    `<style>
+       .mapboxgl-popup-content img { border-radius:0 !important; clip-path:none !important; -webkit-mask-image:none !important; mask-image:none !important; }
+     </style>` + popupHTML(f.properties || {})
+  )
+  .addTo(map);
+    
     map.on('load', () => {
       // source + layer
       map.addSource('alumni', { type:'geojson', data: ALUMNI });
