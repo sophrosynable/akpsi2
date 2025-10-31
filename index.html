@@ -43,8 +43,9 @@
 
     const popupHTML = (p)=>`
       <div style="min-width:220px;font-family:system-ui">
-        ${p.Logo?`<img src="${p.Logo}" style="width:84px;height:84px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 8px">`:''}
-        <div style="text-align:center">
+        ${p.Logo?`<img src="${p.Logo}" 
+     style="width:100px;height:auto;display:block;margin:0 auto 8px;
+            border-radius:8px;object-fit:contain;background:#fff;padding:6px;" />
           <div style="font-weight:700;color:#041E42">${p.Name||'Unknown'}</div>
           ${p.Company?`<div>${p.Company}</div>`:''}
           ${(p.City||p.Country)?`<div style="color:#666;font-size:12px">${p.City||''}${p.Country?', '+p.Country:''}</div>`:''}
