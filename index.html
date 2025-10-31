@@ -1,122 +1,108 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AKPsi Alumni Map — Minimal</title>
+  <title>AKPsi Alumni Map</title>
+
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   <style>
-    html,body,#map { height:100%; margin:0 }
-    #map, .mapboxgl-canvas { pointer-events:auto !important; }
-    #dbg{position:fixed;left:8px;top:8px;background:#000a;color:#fff;padding:6px 8px;border-radius:6px;font:12px system-ui;z-index:9}
+    html, body { height: 100%; margin: 0; }
+    #map { width: 100%; height: 100vh; }
+    /* (Optional) make popup text nicer */
+    .mapboxgl-popup-content { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
   </style>
 </head>
 <body>
-  <div id="dbg">loading…</div>
   <div id="map"></div>
 
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
-    const dbg = (m)=>document.getElementById('dbg').textContent=m;
+    // === SETTINGS ===
+    const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
+    const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
+    const DATA_URL     = './alumni.geojson';  // local file in same repo
 
-    // ---- your data (inline) ----
-    const ALUMNI = {
-      "type":"FeatureCollection",
-      "features":[
-        {"type":"Feature","properties":{"Name":"Dev Pereira","Company":"EY","City":"Chicago","Country":"USA","Industry":"Consulting","Logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/EY_logo_2019.svg/1200px-EY_logo_2019.svg.png"},"geometry":{"type":"Point","coordinates":[-87.623177,41.881832]}},
-        {"type":"Feature","properties":{"Name":"Todd Amatayakul","Company":"McKinsey & Company","City":"Bangkok","Country":"Thailand","Industry":"Consulting","Logo":"https://cdn.cookielaw.org/logos/353d36fb-3a1c-4021-b831-ee6d50361d6a/07a8989e-cba1-4f60-a67a-0ffe9efc1b3a/5705935c-c99f-48d8-8aef-b78127f4aed3/mckinsey---company_owler_20190728_090718_original.png"},"geometry":{"type":"Point","coordinates":[100.523186,13.736717]}},
-        {"type":"Feature","properties":{"Name":"Amaya Ghoshal","Company":"Goldman Sachs","City":"Boston","Country":"USA","Industry":"Finance","Logo":"https://1000logos.net/wp-content/uploads/2016/12/Goldman-Sachs-Logo.png"},"geometry":{"type":"Point","coordinates":[-71.0589,42.3601]}},
-        {"type":"Feature","properties":{"Name":"Christina Chen","Company":"Experian","City":"New York City","Country":"USA","Industry":"Tech","Logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Experian_logo.svg/2560px-Experian_logo.svg.png"},"geometry":{"type":"Point","coordinates":[-74.006,40.7128]}}
-      ]
-    };
-
-    // ---- map ----
+    // === INIT MAP ===
+    mapboxgl.accessToken = MAPBOX_TOKEN;
     const map = new mapboxgl.Map({
-      container:'map',
-      style:'mapbox://styles/mapbox/streets-v12',   // stock style
-      center:[-30,30],
-      zoom:2.3,
-      projection:'mercator'                         // reliable picking
+      container: 'map',
+      style: STYLE_URL,
+      center: [0, 20],
+      zoom: 1.4,
+      projection: 'globe'
     });
-    map.addControl(new mapboxgl.NavigationControl(),'top-right');
+    map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'top-right');
 
-    function popupHTML(p) {
-  return `
-    <div style="min-width:260px;max-width:300px;font-family:system-ui;text-align:center;">
-      ${p.Logo ? `
-        <div style="display:flex;justify-content:center;align-items:center;margin-bottom:10px;">
-          <img src="${p.Logo}" alt="${p.Company || ''}"
-               style="
-                 max-width:170px; max-height:72px; width:auto; height:auto;
-                 object-fit:contain;
-                 background:#fff; padding:6px; border-radius:0 !important;
-                 clip-path:none !important; -webkit-mask-image:none !important; mask-image:none !important;
-               ">
-        </div>
-      ` : ''}
-      <div style="font-weight:700;color:#041E42;font-size:15px;margin-bottom:2px;">
-        ${p.Name || 'Unknown'}
-      </div>
-      <div style="font-size:14px;margin-bottom:2px;">${p.Company || ''}</div>
-      <div style="color:#666;font-size:13px;margin-bottom:3px;">
-        ${p.City || ''}${p.Country ? ', ' + p.Country : ''}
-      </div>
-      ${p.Industry ? `<div style="color:#999;font-size:12px;">${p.Industry}</div>` : ''}
-    </div>
-  `;
-}
-    
-   map.on('click', 'alumni-points', (e) => {
-  const f = e.features[0];
-  const popupStyleReset = `
-    <style>
-      .mapboxgl-popup-content img {
-        border-radius: 0 !important;
-        clip-path: none !important;
-        -webkit-mask-image: none !important;
-        mask-image: none !important;
-      }
-    </style>
-  `;
-  new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
-    .setLngLat(f.geometry.coordinates)
-    .setHTML(popupStyleReset + popupHTML(f.properties))
-    .addTo(map);
-});
+    // === POPUP HTML ===
+    function popupHTML(p = {}) {
+      return `
+        <div style="min-width:260px;max-width:300px;text-align:center;">
+          ${p.Logo ? `
+            <div style="display:flex;justify-content:center;align-items:center;margin-bottom:10px;">
+              <img src="${p.Logo}" alt="${p.Company || ''}"
+                   style="max-width:170px;max-height:72px;width:auto;height:auto;
+                          object-fit:contain;background:#fff;padding:6px;
+                          border-radius:0 !important;clip-path:none !important;
+                          -webkit-mask-image:none !important;mask-image:none !important;">
+            </div>` : ``}
+          <div style="font-weight:700;color:#041E42;font-size:15px;margin-bottom:2px;">${p.Name || ''}</div>
+          <div style="font-size:14px;margin-bottom:2px;">${p.Company || ''}</div>
+          <div style="color:#666;font-size:13px;margin-bottom:3px;">${p.City || ''}${p.Country ? ', ' + p.Country : ''}</div>
+          ${p.Industry ? `<div style="color:#999;font-size:12px;">${p.Industry}</div>` : ``}
+        </div>`;
+    }
 
-      // ensure it's at very top
-      map.moveLayer('alumni-bubbles');
-      dbg(`features: ${ALUMNI.features.length}`);
+    // === LOAD DATA & LAYERS ===
+    map.on('load', async () => {
+      try {
+        const res = await fetch(DATA_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('GeoJSON fetch failed: ' + res.status);
+        const data = await res.json();
+        console.log('Loaded features:', (data.features || []).length);
 
-      // hover cursor
-      map.on('mousemove',(e)=>{
-        const hits = map.queryRenderedFeatures(e.point,{layers:['alumni-bubbles']});
-        map.getCanvas().style.cursor = hits.length ? 'pointer' : '';
-      });
+        map.addSource('alumni', { type: 'geojson', data });
 
-      // layer click
-      map.on('click','alumni-bubbles',(e)=>{
-        dbg('layer click');
-        const f = e.features?.[0]; if(!f) return;
-        new mapboxgl.Popup({offset:12,maxWidth:'320px'})
-          .setLngLat(f.geometry.coordinates)
-          .setHTML(popupHTML(f.properties||{}))
-          .addTo(map);
-      });
+        // Bubble layer
+        map.addLayer({
+          id: 'alumni-bubbles',
+          type: 'circle',
+          source: 'alumni',
+          paint: {
+            'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 3, 6, 7, 10, 9],
+            'circle-color': '#041E42',
+            'circle-opacity': 0.9,
+            'circle-stroke-color': '#FFFFFF',
+            'circle-stroke-width': 1
+          }
+        });
 
-      // fallback hit-test anywhere
-      map.on('click',(e)=>{
-        const hits = map.queryRenderedFeatures(e.point,{layers:['alumni-bubbles']});
-        dbg(`map click; hits: ${hits.length}`);
-        if(hits.length){
-          const f = hits[0];
-          new mapboxgl.Popup({offset:12,maxWidth:'320px'})
+        // Interactions
+        map.on('mouseenter', 'alumni-bubbles', () => map.getCanvas().style.cursor = 'pointer');
+        map.on('mouseleave', 'alumni-bubbles', () => map.getCanvas().style.cursor = '');
+
+        map.on('click', 'alumni-bubbles', (e) => {
+          const f = e.features && e.features[0];
+          if (!f) return;
+          const styleReset = `
+            <style>
+              .mapboxgl-popup-content img {
+                border-radius:0 !important; clip-path:none !important;
+                -webkit-mask-image:none !important; mask-image:none !important;
+              }
+            </style>`;
+          new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
             .setLngLat(f.geometry.coordinates)
-            .setHTML(popupHTML(f.properties||{}))
+            .setHTML(styleReset + popupHTML(f.properties || {}))
             .addTo(map);
-        }
-      });
+        });
+      } catch (err) {
+        console.error('Map init error:', err);
+        const el = document.createElement('pre');
+        el.textContent = String(err);
+        el.style.cssText = 'position:fixed;bottom:8px;left:8px;background:#fff;padding:8px;border:1px solid #ccc;max-width:90vw;max-height:40vh;overflow:auto;z-index:99999;';
+        document.body.appendChild(el);
+      }
     });
   </script>
 </body>
