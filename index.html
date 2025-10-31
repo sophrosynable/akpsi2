@@ -45,18 +45,14 @@
   return `
     <div style="min-width:260px;max-width:300px;font-family:system-ui;text-align:center;">
       ${p.Logo ? `
-        <div style="
-          display:flex;
-          justify-content:center;
-          align-items:center;
-          background:#fff;
-          padding:8px;
-          border-radius:8px;
-          margin-bottom:10px;
-        ">
-          <img src="${p.Logo}" 
-               style="max-width:160px;max-height:70px;width:auto;height:auto;object-fit:contain;" 
-               alt="${p.Company || ''}">
+        <div style="display:flex;justify-content:center;align-items:center;margin-bottom:10px;">
+          <img src="${p.Logo}" alt="${p.Company || ''}"
+               style="
+                 max-width:170px; max-height:72px; width:auto; height:auto;
+                 object-fit:contain;
+                 background:#fff; padding:6px; border-radius:0 !important;
+                 clip-path:none !important; -webkit-mask-image:none !important; mask-image:none !important;
+               ">
         </div>
       ` : ''}
       <div style="font-weight:700;color:#041E42;font-size:15px;margin-bottom:2px;">
@@ -70,7 +66,6 @@
     </div>
   `;
 }
-
 
     map.on('load', () => {
       // source + layer
