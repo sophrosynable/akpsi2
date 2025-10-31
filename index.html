@@ -41,17 +41,36 @@
     });
     map.addControl(new mapboxgl.NavigationControl(),'top-right');
 
-    const popupHTML = (p)=>`
-      <div style="min-width:220px;font-family:system-ui">
-        ${p.Logo?`<img src="${p.Logo}" 
-     style="width:100px;height:auto;display:block;margin:0 auto 8px;
-            border-radius:8px;object-fit:contain;background:#fff;padding:6px;" />
-          <div style="font-weight:700;color:#041E42">${p.Name||'Unknown'}</div>
-          ${p.Company?`<div>${p.Company}</div>`:''}
-          ${(p.City||p.Country)?`<div style="color:#666;font-size:12px">${p.City||''}${p.Country?', '+p.Country:''}</div>`:''}
-          ${p.Industry?`<div style="margin-top:6px;font-size:12px;color:#999">${p.Industry}</div>`:''}
+    function popupHTML(p) {
+  return `
+    <div style="min-width:260px;max-width:300px;font-family:system-ui;text-align:center;">
+      ${p.Logo ? `
+        <div style="
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          background:#fff;
+          padding:8px;
+          border-radius:8px;
+          margin-bottom:10px;
+        ">
+          <img src="${p.Logo}" 
+               style="max-width:160px;max-height:70px;width:auto;height:auto;object-fit:contain;" 
+               alt="${p.Company || ''}">
         </div>
-      </div>`;
+      ` : ''}
+      <div style="font-weight:700;color:#041E42;font-size:15px;margin-bottom:2px;">
+        ${p.Name || 'Unknown'}
+      </div>
+      <div style="font-size:14px;margin-bottom:2px;">${p.Company || ''}</div>
+      <div style="color:#666;font-size:13px;margin-bottom:3px;">
+        ${p.City || ''}${p.Country ? ', ' + p.Country : ''}
+      </div>
+      ${p.Industry ? `<div style="color:#999;font-size:12px;">${p.Industry}</div>` : ''}
+    </div>
+  `;
+}
+
 
     map.on('load', () => {
       // source + layer
