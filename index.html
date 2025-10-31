@@ -66,32 +66,24 @@
     </div>
   `;
 }
-    // right after you create the popup, inject a tiny style reset
-new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
-  .setLngLat(f.geometry.coordinates)
-  .setHTML(
-    `<style>
-       .mapboxgl-popup-content img { border-radius:0 !important; clip-path:none !important; -webkit-mask-image:none !important; mask-image:none !important; }
-     </style>` + popupHTML(f.properties || {})
-  )
-  .addTo(map);
     
-    map.on('load', () => {
-      // source + layer
-      map.addSource('alumni', { type:'geojson', data: ALUMNI });
-
-      map.addLayer({
-        id:'alumni-bubbles',
-        type:'circle',
-        source:'alumni',
-        paint:{
-          'circle-radius':['interpolate',['linear'],['zoom'], 0,8, 4,10, 8,12, 12,14],
-          'circle-color':'#041E42',
-          'circle-opacity':0.9,
-          'circle-stroke-color':'#fff',
-          'circle-stroke-width':2
-        }
-      });
+   map.on('click', 'alumni-points', (e) => {
+  const f = e.features[0];
+  const popupStyleReset = `
+    <style>
+      .mapboxgl-popup-content img {
+        border-radius: 0 !important;
+        clip-path: none !important;
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+      }
+    </style>
+  `;
+  new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
+    .setLngLat(f.geometry.coordinates)
+    .setHTML(popupStyleReset + popupHTML(f.properties))
+    .addTo(map);
+});
 
       // ensure it's at very top
       map.moveLayer('alumni-bubbles');
