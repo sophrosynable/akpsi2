@@ -18,9 +18,9 @@
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
 const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
 
-/* If alumni.geojson sits next to index.html, use this: */
+/* If alumni.geojson sits next to index.html, keep this: */
 const GEOJSON_URL  = 'alumni.geojson';
-/* Or use your raw URL instead:
+/* Otherwise point to your raw link:
    const GEOJSON_URL = 'https://raw.githubusercontent.com/sophrosynable/akpsistesting/main/akpsi-alumni.geojson';
 */
 
@@ -44,39 +44,42 @@ map.on('style.load', () => {
   });
 });
 
-/* Popup CSS so logos are not cropped */
+/* ---------- Popup CSS (bigger, white logo box, text offset) ---------- */
 const styleEl = document.createElement('style');
 styleEl.textContent = `
-  .mapboxgl-popup-content { padding: 8px 10px 10px 10px; }
-  .alum-wrap { width: 300px; max-width: 90vw; }
+  .mapboxgl-popup-content { padding: 14px 16px 16px 16px; }
+  /* MUCH bigger popup */
+  .alum-wrap { width: 560px; max-width: 95vw; }
   .alum-header {
-    font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, Helvetica;
-    color: #041E42; margin: 4px 2px 10px;
+    font: 700 16px system-ui,-apple-system,Segoe UI,Roboto,Helvetica;
+    color: #041E42; margin: 4px 2px 14px;
   }
-  .alum-list { max-height: 280px; overflow:auto; display:grid; gap:12px; }
-  .alum-card { display:grid; grid-template-columns: 64px 1fr; gap:10px; align-items:center; }
+  /* roomy list with scroll if tall */
+  .alum-list { max-height: 420px; overflow:auto; display:grid; gap:16px; }
+  /* push text right with a wider logo column */
+  .alum-card { display:grid; grid-template-columns: 96px 1fr; gap:16px; align-items:center; }
+  /* white logo box; no gray; bigger; not cropped */
   .alum-logo {
-    width:64px; height:64px; border-radius:8px;
-    object-fit:contain; background:#f5f7fb; padding:6px; border:1px solid #e6e9ef;
+    width:96px; height:96px; border-radius:12px;
+    background:#ffffff; padding:10px; border:1px solid #e5e7eb;
+    object-fit:contain; object-position:center; display:block;
   }
   .alum-logo.placeholder {
-    display:flex; align-items:center; justify-content:center; color:#98a1b3; font-size:10px;
+    display:flex; align-items:center; justify-content:center; color:#98a1b3; font-size:11px;
   }
-  .alum-name { font-weight:700; color:#0f172a; }
-  .alum-company { color:#1f2937; }
-  .alum-meta { color:#6b7280; font-size:12px; }
+  .alum-name { font-weight:800; color:#0f172a; font-size:20px; line-height:1.15; }
+  .alum-company { color:#1f2937; font-size:18px; margin-top:4px; }
+  .alum-meta { color:#6b7280; font-size:18px; margin-top:6px; }
 `;
 document.head.appendChild(styleEl);
 
-/* Template for the popup with many alumni */
+/* ---------- Popup template (handles many alumni) ---------- */
 function alumniPopupHTML(features) {
-  const p0    = features[0]?.properties || {};
-  const city  = p0.City || '';
-  const ctry  = p0.Country || '';
-  const header = [city, ctry].filter(Boolean).join(', ');
+  const p0     = features[0]?.properties || {};
+  const header = [p0.City || '', p0.Country || ''].filter(Boolean).join(', ');
 
   const cards = features.map(f => {
-    const p = f.properties || {};
+    const p   = f.properties || {};
     const img = p.PhotoURL || p.Photo || p.Logo || '';
     return `
       <div class="alum-card">
@@ -97,63 +100,62 @@ function alumniPopupHTML(features) {
     </div>`;
 }
 
-/* Keep data available for city-grouping */
+/* Keep data around for grouping by city */
 let ALUMNI_DATA = null;
 
+/* ---------- Load & render ---------- */
 map.on('load', async () => {
   const res = await fetch(GEOJSON_URL, { cache: 'no-cache' });
   if (!res.ok) { console.error('GeoJSON fetch failed', res.status); return; }
   const data = await res.json();
-  ALUMNI_DATA = data; // store globally
+  ALUMNI_DATA = data;
 
-  // Source + bubbles
   map.addSource('alumni', { type: 'geojson', data });
+
+  /* Bigger dots; SOLID NAVY; NO OUTLINE */
   map.addLayer({
     id: 'alumni-bubbles',
     type: 'circle',
     source: 'alumni',
     paint: {
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 3.5, 6, 7, 10, 9],
+      /* roughly 2× the previous size */
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 7, 6, 12, 10, 16],
       'circle-color': '#041E42',
-      'circle-opacity': 0.92,
-      'circle-stroke-color': '#FFFFFF',
-      'circle-stroke-width': 1
+      'circle-opacity': 0.95,
+      'circle-stroke-width': 0          /* <- NO BORDER/OUTLINE */
     }
   });
 
   map.on('mouseenter', 'alumni-bubbles', () => map.getCanvas().style.cursor = 'pointer');
   map.on('mouseleave', 'alumni-bubbles', () => map.getCanvas().style.cursor = '');
 
-  // CLICK => show ALL alumni with the same City + Country as the clicked feature
+  /* Click => show ALL alumni with the same City + Country */
   map.on('click', 'alumni-bubbles', (e) => {
     if (!ALUMNI_DATA) return;
-
-    // feature clicked
     const f = e.features && e.features[0];
     if (!f) return;
 
-    const p = f.properties || {};
-    const city     = (p.City || '').toLowerCase().trim();
-    const country  = (p.Country || '').toLowerCase().trim();
+    const p        = f.properties || {};
+    const cityKey  = (p.City || '').toLowerCase().trim();
+    const ctryKey  = (p.Country || '').toLowerCase().trim();
 
-    // filter all features that have the same City + Country
     let sameCity = ALUMNI_DATA.features.filter(x => {
       const px = x.properties || {};
-      const c1 = (px.City || '').toLowerCase().trim();
-      const c2 = (px.Country || '').toLowerCase().trim();
-      return c1 === city && c2 === country;
+      return (px.City || '').toLowerCase().trim() === cityKey &&
+             (px.Country || '').toLowerCase().trim() === ctryKey;
     });
 
-    // fallback: if City/Country missing, fall back to exact coordinates
+    /* Fallback to exact coords just in case city/country is missing */
     if (!sameCity.length) {
       const key = JSON.stringify(f.geometry.coordinates);
-      sameCity = ALUMNI_DATA.features.filter(x => JSON.stringify(x.geometry.coordinates) === key);
+      sameCity  = ALUMNI_DATA.features.filter(
+        x => JSON.stringify(x.geometry.coordinates) === key
+      );
     }
 
-    const html = alumniPopupHTML(sameCity);
-    new mapboxgl.Popup({ offset: 12, maxWidth: '360px' })
+    new mapboxgl.Popup({ offset: 14, maxWidth: '640px' }) /* bigger max width */
       .setLngLat(f.geometry.coordinates)
-      .setHTML(html)
+      .setHTML(alumniPopupHTML(sameCity))
       .addTo(map);
   });
 });
