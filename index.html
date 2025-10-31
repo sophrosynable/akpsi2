@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AKPsi Alumni Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { width: 100%; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek',
+      center: [0, 20],
+      zoom: 1.4
+    });
+
+    map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'top-right');
+
+    map.on('load', async () => {
+      const res = await fetch('https://raw.githubusercontent.com/sophrosynable/akpsistesting/main/akpsi-alumni.geojson');
+      const data = await res.json();
+
+      map.addSource('alumni', { type: 'geojson', data });
+
+      map.addLayer({
+        id: 'alumni-bubbles',
+        type: 'circle',
+        source: 'alumni',
+        paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 3, 6, 7, 10, 9],
+          'circle-color': '#041E42',
+          'circle-opacity': 0.9,
+          'circle-stroke-color': '#FFFFFF',
+          'circle-stroke-width': 1
+        }
+      });
+
+      map.on('click', 'alumni-bubbles', (e) => {
+        const p = e.features[0].properties;
+        const html = `
+          <div style="min-width:220px;font-family:system-ui,Roboto;">
+            <img src="${p.Logo}" style="width:90px;margin-bottom:4px"/>
+            <div><strong>${p.Name}</strong></div>
+            <div>${p.Company}</div>
+            <div style="color:#666">${p.City}, ${p.Country}</div>
+            <div style="margin-top:6px;font-size:12px;color:#999">${p.Industry}</div>
+          </div>
+        `;
+        new mapboxgl.Popup({ offset: 12 })
+          .setLngLat(e.features[0].geometry.coordinates)
+          .setHTML(html)
+          .addTo(map);
+      });
+
+      map.on('mouseenter', 'alumni-bubbles', () => map.getCanvas().style.cursor = 'pointer');
+      map.on('mouseleave', 'alumni-bubbles', () => map.getCanvas().style.cursor = '');
+    });
+  </script>
+</body>
+</html>
