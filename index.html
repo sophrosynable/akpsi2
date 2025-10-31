@@ -1,69 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AKPsi Alumni Map</title>
 
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+  <!-- Mapbox GL CSS -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet"/>
+
   <style>
     html, body { height: 100%; margin: 0; }
     #map { width: 100%; height: 100vh; }
-    /* (Optional) make popup text nicer */
-    .mapboxgl-popup-content { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+
+    /* Popup layout + non-cropped logos */
+    .mapboxgl-popup { max-width: 360px; }
+    .mapboxgl-popup-content { padding: 16px 18px; }
+    .popup-logo {
+      display: block;
+      margin: 0 auto 10px;
+      max-width: 220px;
+      height: auto;            /* keep full logo — no cropping */
+      object-fit: contain;     /* letterbox inside the box */
+      border-radius: 0;        /* ensure no circle mask */
+    }
+    .popup-title { font-weight: 700; font-size: 16px; color: #041E42; text-align:center; }
+    .popup-line  { text-align:center; }
+    .popup-muted { color:#666; font-size:12px; text-align:center; }
   </style>
 </head>
 <body>
   <div id="map"></div>
 
+  <!-- Mapbox GL JS -->
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   <script>
-    // === SETTINGS ===
+    /* ===== Settings ===== */
     const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
     const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
-    const DATA_URL     = './alumni.geojson';  // local file in same repo
+    /* If your geojson sits in the repo root next to this index.html, this relative path is best: */
+    const GEOJSON_URL  = 'alumni.geojson';
 
-    // === INIT MAP ===
     mapboxgl.accessToken = MAPBOX_TOKEN;
+
     const map = new mapboxgl.Map({
       container: 'map',
       style: STYLE_URL,
-      center: [0, 20],
-      zoom: 1.4,
+      center: [-30, 25],
+      zoom: 1.3,
       projection: 'globe'
     });
+
     map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'top-right');
 
-    // === POPUP HTML ===
-    function popupHTML(p = {}) {
-      return `
-        <div style="min-width:260px;max-width:300px;text-align:center;">
-          ${p.Logo ? `
-            <div style="display:flex;justify-content:center;align-items:center;margin-bottom:10px;">
-              <img src="${p.Logo}" alt="${p.Company || ''}"
-                   style="max-width:170px;max-height:72px;width:auto;height:auto;
-                          object-fit:contain;background:#fff;padding:6px;
-                          border-radius:0 !important;clip-path:none !important;
-                          -webkit-mask-image:none !important;mask-image:none !important;">
-            </div>` : ``}
-          <div style="font-weight:700;color:#041E42;font-size:15px;margin-bottom:2px;">${p.Name || ''}</div>
-          <div style="font-size:14px;margin-bottom:2px;">${p.Company || ''}</div>
-          <div style="color:#666;font-size:13px;margin-bottom:3px;">${p.City || ''}${p.Country ? ', ' + p.Country : ''}</div>
-          ${p.Industry ? `<div style="color:#999;font-size:12px;">${p.Industry}</div>` : ``}
-        </div>`;
-    }
-
-    // === LOAD DATA & LAYERS ===
     map.on('load', async () => {
       try {
-        const res = await fetch(DATA_URL, { cache: 'no-store' });
+        // Fetch your features
+        const res  = await fetch(GEOJSON_URL, { cache: 'no-cache' });
         if (!res.ok) throw new Error('GeoJSON fetch failed: ' + res.status);
         const data = await res.json();
-        console.log('Loaded features:', (data.features || []).length);
 
+        // Add as a source
         map.addSource('alumni', { type: 'geojson', data });
 
-        // Bubble layer
+        // Navy bubbles
         map.addLayer({
           id: 'alumni-bubbles',
           type: 'circle',
@@ -78,30 +77,30 @@
         });
 
         // Interactions
-        map.on('mouseenter', 'alumni-bubbles', () => map.getCanvas().style.cursor = 'pointer');
-        map.on('mouseleave', 'alumni-bubbles', () => map.getCanvas().style.cursor = '');
+        map.on('mouseenter', 'alumni-bubbles', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.on('mouseleave', 'alumni-bubbles', () => { map.getCanvas().style.cursor = ''; });
 
         map.on('click', 'alumni-bubbles', (e) => {
-          const f = e.features && e.features[0];
-          if (!f) return;
-          const styleReset = `
-            <style>
-              .mapboxgl-popup-content img {
-                border-radius:0 !important; clip-path:none !important;
-                -webkit-mask-image:none !important; mask-image:none !important;
-              }
-            </style>`;
-          new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
+          const f = e.features[0];
+          const p = f.properties || {};
+          const imgHTML = p.Logo ? `<img class="popup-logo" src="${p.Logo}" alt="${p.Company || ''} logo">` : '';
+          const cityCountry = [p.City, p.Country].filter(Boolean).join(', ');
+
+          const html = `
+            ${imgHTML}
+            <div class="popup-title">${p.Name || ''}</div>
+            <div class="popup-line">${p.Company || ''}</div>
+            <div class="popup-muted">${cityCountry}</div>
+            <div class="popup-muted" style="margin-top:6px;">${p.Industry || ''}</div>
+          `;
+
+          new mapboxgl.Popup({ offset: 12 })
             .setLngLat(f.geometry.coordinates)
-            .setHTML(styleReset + popupHTML(f.properties || {}))
+            .setHTML(html)
             .addTo(map);
         });
       } catch (err) {
         console.error('Map init error:', err);
-        const el = document.createElement('pre');
-        el.textContent = String(err);
-        el.style.cssText = 'position:fixed;bottom:8px;left:8px;background:#fff;padding:8px;border:1px solid #ccc;max-width:90vw;max-height:40vh;overflow:auto;z-index:99999;';
-        document.body.appendChild(el);
       }
     });
   </script>
