@@ -1,108 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AKPsi Alumni Map</title>
 
   <!-- Mapbox GL CSS -->
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet"/>
-
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
   <style>
-    html, body { height: 100%; margin: 0; }
-    #map { width: 100%; height: 100vh; }
-
-    /* Popup layout + non-cropped logos */
-    .mapboxgl-popup { max-width: 360px; }
-    .mapboxgl-popup-content { padding: 16px 18px; }
-    .popup-logo {
-      display: block;
-      margin: 0 auto 10px;
-      max-width: 220px;
-      height: auto;            /* keep full logo — no cropping */
-      object-fit: contain;     /* letterbox inside the box */
-      border-radius: 0;        /* ensure no circle mask */
-    }
-    .popup-title { font-weight: 700; font-size: 16px; color: #041E42; text-align:center; }
-    .popup-line  { text-align:center; }
-    .popup-muted { color:#666; font-size:12px; text-align:center; }
+    html, body, #map { height: 100%; margin: 0; }
   </style>
 </head>
 <body>
-  <div id="map"></div>
 
-  <!-- Mapbox GL JS -->
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
-  <script>
-    /* ===== Settings ===== */
-    const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
-    const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
-    /* If your geojson sits in the repo root next to this index.html, this relative path is best: */
-    const GEOJSON_URL  = 'alumni.geojson';
+<div id="map"></div>
 
-    mapboxgl.accessToken = MAPBOX_TOKEN;
+<!-- Mapbox GL JS -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<script>
+/* ---------- SETTINGS ---------- */
+const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
+const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
 
-    const map = new mapboxgl.Map({
-      container: 'map',
-      style: STYLE_URL,
-      center: [-30, 25],
-      zoom: 1.3,
-      projection: 'globe'
-    });
+/* If the GeoJSON file sits next to this index.html in the repo root, use: */
+const GEOJSON_URL  = 'alumni.geojson';
+/* If you prefer GitHub raw, use your raw URL instead:
+   const GEOJSON_URL = 'https://raw.githubusercontent.com/sophrosynable/akpsistesting/main/akpsi-alumni.geojson';
+*/
 
-    map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'top-right');
+/* ---------- MAP ---------- */
+mapboxgl.accessToken = MAPBOX_TOKEN;
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: STYLE_URL,
+  center: [0, 20],
+  zoom: 1.4,
+  projection: 'globe'
+});
 
-    map.on('load', async () => {
-      try {
-        // Fetch your features
-        const res  = await fetch(GEOJSON_URL, { cache: 'no-cache' });
-        if (!res.ok) throw new Error('GeoJSON fetch failed: ' + res.status);
-        const data = await res.json();
+map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'top-right');
 
-        // Add as a source
-        map.addSource('alumni', { type: 'geojson', data });
+map.on('style.load', () => {
+  map.setFog({
+    color: 'rgba(160,200,255,1)',
+    'high-color': 'rgba(36,92,223,0.4)',
+    'space-color': '#0b1434',
+    'horizon-blend': 0.2,
+    'star-intensity': 0.35
+  });
+});
 
-        // Navy bubbles
-        map.addLayer({
-          id: 'alumni-bubbles',
-          type: 'circle',
-          source: 'alumni',
-          paint: {
-            'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 3, 6, 7, 10, 9],
-            'circle-color': '#333C63',
-            'circle-opacity': 0.9,
-            'circle-stroke-color': '#333C63',
-            'circle-stroke-width': 1
-          }
-        });
+/* helper to group by (rounded) coordinates */
+function coordKey(f) {
+  const [lng, lat] = f.geometry.coordinates;
+  return `${lng.toFixed(4)},${lat.toFixed(4)}`;
+}
 
-        // Interactions
-        map.on('mouseenter', 'alumni-bubbles', () => { map.getCanvas().style.cursor = 'pointer'; });
-        map.on('mouseleave', 'alumni-bubbles', () => { map.getCanvas().style.cursor = ''; });
+/* popup HTML for many alumni at same spot */
+function alumniPopupHTML(group) {
+  const city = group[0]?.properties?.City || '';
+  const ctry = group[0]?.properties?.Country || '';
+  const header = `${city}${ctry ? ', ' + ctry : ''}`;
 
-        map.on('click', 'alumni-bubbles', (e) => {
-          const f = e.features[0];
-          const p = f.properties || {};
-          const imgHTML = p.Logo ? `<img class="popup-logo" src="${p.Logo}" alt="${p.Company || ''} logo">` : '';
-          const cityCountry = [p.City, p.Country].filter(Boolean).join(', ');
+  const cards = group.map((f) => {
+    const p = f.properties || {};
+    const img = p.PhotoURL || p.Photo || p.Logo || '';
+    return `
+      <div class="alum-card">
+        ${img ? `<img class="alum-logo" src="${img}" alt="" loading="lazy" />` : `<div class="alum-logo placeholder">No image</div>`}
+        <div>
+          <div class="alum-name">${p.Name || ''}</div>
+          <div class="alum-company">${p.Company || ''}</div>
+          <div class="alum-meta">${p.Industry || ''}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
 
-          const html = `
-            ${imgHTML}
-            <div class="popup-title">${p.Name || ''}</div>
-            <div class="popup-line">${p.Company || ''}</div>
-            <div class="popup-muted">${cityCountry}</div>
-            <div class="popup-muted" style="margin-top:6px;">${p.Industry || ''}</div>
-          `;
+  return `
+    <div class="alum-wrap">
+      <div class="alum-header">${header}</div>
+      <div class="alum-list">${cards}</div>
+    </div>
+  `;
+}
 
-          new mapboxgl.Popup({ offset: 12 })
-            .setLngLat(f.geometry.coordinates)
-            .setHTML(html)
-            .addTo(map);
-        });
-      } catch (err) {
-        console.error('Map init error:', err);
-      }
-    });
-  </script>
+/* popup-specific CSS (logos uncropped) */
+const styleEl = document.createElement('style');
+styleEl.textContent = `
+  .mapboxgl-popup-content { padding: 8px 10px 10px 10px; }
+  .alum-wrap { width: 280px; max-width: 86vw; }
+  .alum-header {
+    font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, Helvetica;
+    color: #041E42; margin: 4px 2px 8px;
+  }
+  .alum-list {
+    max-height: 260px; overflow: auto; padding-right: 2px;
+    display: grid; grid-template-columns: 1fr; gap: 10px;
+  }
+  .alum-card { display: grid; grid-template-columns: 64px 1fr; gap: 10px; align-items: center; }
+  .alum-logo {
+    width: 64px; height: 64px; border-radius: 8px;
+    object-fit: contain; background:#f5f7fb; padding:6px; border:1px solid #e6e9ef;
+  }
+  .alum-logo.placeholder {
+    display:flex; align-items:center; justify-content:center; color:#98a1b3; font-size:10px;
+  }
+  .alum-name { font-weight: 700; color:#0f172a; }
+  .alum-company { color:#1f2937; }
+  .alum-meta { color:#6b7280; font-size:12px; }
+`;
+document.head.appendChild(styleEl);
+
+/* ---------- LOAD DATA & LAYER ---------- */
+map.on('load', async () => {
+  const res = await fetch(GEOJSON_URL, { cache: 'no-cache' });
+  if (!res.ok) { console.error('GeoJSON fetch failed', res.status); return; }
+  const data = await res.json();
+
+  map.addSource('alumni', { type: 'geojson', data });
+
+  map.addLayer({
+    id: 'alumni-bubbles',
+    type: 'circle',
+    source: 'alumni',
+    paint: {
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 3.5, 6, 7, 10, 9],
+      'circle-color': '#041E42',
+      'circle-opacity': 0.92,
+      'circle-stroke-color': '#FFFFFF',
+      'circle-stroke-width': 1
+    }
+  });
+
+  map.on('mouseenter', 'alumni-bubbles', () => map.getCanvas().style.cursor = 'pointer');
+  map.on('mouseleave', 'alumni-bubbles', () => map.getCanvas().style.cursor = '');
+
+  map.on('click', 'alumni-bubbles', (e) => {
+    // features within 18px of click
+    const nearby = map.queryRenderedFeatures(
+      [[e.point.x - 18, e.point.y - 18], [e.point.x + 18, e.point.y + 18]],
+      { layers: ['alumni-bubbles'] }
+    );
+    if (!nearby.length) return;
+
+    const clicked = nearby[0];
+    const key = coordKey(clicked);
+    const sameSpot = nearby.filter(f => coordKey(f) === key);
+
+    const html = alumniPopupHTML(sameSpot);
+
+    new mapboxgl.Popup({ offset: 12, maxWidth: '360px' })
+      .setLngLat(clicked.geometry.coordinates)
+      .setHTML(html)
+      .addTo(map);
+  });
+});
+</script>
+
 </body>
 </html>
