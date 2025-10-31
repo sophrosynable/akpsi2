@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AKPsi Alumni Map</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    html,body,#map { height:100%; margin:0; }
+    /* ensure clicks go to the canvas even inside iframes */
+    #map, .mapboxgl-canvas { pointer-events:auto !important; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+  <script>
+    const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
+    const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
+    const GEOJSON_URL  = 'https://raw.githubusercontent.com/sophrosynable/akpsitesting/main/akpsi-alumni.geojson';
+
+    mapboxgl.accessToken = MAPBOX_TOKEN;
+    const map = new mapboxgl.Map({
+      container:'map', style:STYLE_URL, center:[0,20], zoom:1.4, projection:'globe'
+    });
+    map.addControl(new mapboxgl.NavigationControl({ visualizePitch:true }), 'top-right');
+    map.on('style.load', ()=> map.setFog({}));
+
+    function popupFor(feature){
+      const p = feature.properties || {};
+      const img = p.PhotoURL || p.Logo || p.Image || '';
+      const name = p.Name || p.Full_Name || p.Alumni || 'Unknown';
+      const company = p.Company || p.Company_Name || p.Organization || '';
+      const city = p.City || '', country = p.Country || '';
+      const linkedin = p.LinkedIn || p.Linkedin_URL || p.Profile || '';
+      const html = `
+        <div style="min-width:240px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica;">
+          ${img ? `<img src="${img}" style="width:84px;height:84px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 8px;">` : ''}
+          <div style="text-align:center;">
+            <div style="font-weight:700;color:#041E42">${name}</div>
+            ${company?`<div>${company}</div>`:''}
+            ${(city||country)?`<div style="color:#666;font-size:12px">${city}${country?', '+country:''}</div>`:''}
+            ${linkedin?`<div style="margin-top:6px;"><a href="${linkedin}" target="_blank" rel="noopener" style="color:#041E42;text-decoration:underline;">LinkedIn</a></div>`:''}
+          </div>
+        </div>`;
+      new mapboxgl.Popup({ offset:12, maxWidth:'320px' })
+        .setLngLat(feature.geometry.coordinates).setHTML(html).addTo(map);
+    }
+
+    map.on('load', async () => {
+      const res = await fetch(GEOJSON_URL, { cache:'no-cache' });
+      if (!res.ok) { console.error('GeoJSON fetch failed:', res.status); return; }
+      const data = await res.json();
+      console.log('Loaded features:', data.features?.length || 0);
+
+      map.addSource('alumni', { type:'geojson', data });
+      map.addLayer({
+        id:'alumni-bubbles', type:'circle', source:'alumni',
+        paint:{
+          'circle-radius':['interpolate',['linear'],['zoom'], 1,6, 6,8, 10,10],
+          'circle-color':'#041E42','circle-opacity':0.9,
+          'circle-stroke-color':'#fff','circle-stroke-width':1
+        }
+      });
+
+      // robust click + hover
+      map.on('mousemove', (e)=>{
+        const hits = map.queryRenderedFeatures(e.point, { layers:['alumni-bubbles'] });
+        map.getCanvas().style.cursor = hits.length ? 'pointer' : '';
+      });
+      map.on('click', (e)=>{
+        const hits = map.queryRenderedFeatures(e.point, { layers:['alumni-bubbles'] });
+        if (hits.length) popupFor(hits[0]);
+      });
+    });
+  </script>
+</body>
+</html>
