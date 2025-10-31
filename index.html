@@ -17,7 +17,7 @@
 /* ===== Settings ===== */
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
 const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
-const GEOJSON_URL  = 'alumni.geojson'; // or your raw URL if using GitHub
+const GEOJSON_URL  = 'alumni.geojson'; // or your raw URL
 
 mapboxgl.accessToken = MAPBOX_TOKEN;
 const map = new mapboxgl.Map({
@@ -29,7 +29,6 @@ const map = new mapboxgl.Map({
 });
 map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'top-right');
 
-/* Atmosphere look */
 map.on('style.load', () => {
   map.setFog({
     color: 'rgba(160,200,255,1)',
@@ -43,37 +42,33 @@ map.on('style.load', () => {
 /* ---------- Popup + Layout CSS ---------- */
 const styleEl = document.createElement('style');
 styleEl.textContent = `
-  .mapboxgl-popup-content { padding: 16px 18px 18px 18px; border-radius:16px; }
+  .mapboxgl-popup-content { padding: 18px 20px 20px 20px; border-radius:16px; }
 
-  /* Bigger popup area */
-  .alum-wrap { width: 560px; max-width: 95vw; }
+  .alum-wrap { width: 580px; max-width: 96vw; }
 
-  /* City header */
   .alum-header {
     font: 700 16px system-ui,-apple-system,Segoe UI,Roboto,Helvetica;
     color: #041E42; margin: 4px 2px 14px;
   }
 
-  /* List layout */
-  .alum-list { max-height: 420px; overflow:auto; display:grid; gap:18px; }
+  .alum-list { max-height: 440px; overflow:auto; display:grid; gap:22px; }
 
-  /* Wider logo column + spacing */
+  /* More spacing between logo and text */
   .alum-card {
     display:grid;
-    grid-template-columns: 120px 1fr;
-    gap:20px;
+    grid-template-columns: 130px 1fr;
+    gap:32px;             /* << increased gap */
     align-items:center;
   }
 
-  /* Logo tile - perfect square with thin crisp border */
   .alum-logo{
-    width:120px; height:120px; aspect-ratio:1/1;
+    width:130px; height:130px; aspect-ratio:1/1;
     background:#fff;
     border-radius:16px;
     box-shadow: inset 0 0 0 1px #e6e9ef;
     object-fit:contain;
     object-position:center;
-    padding:12px;
+    padding:14px;
     display:block;
   }
 
@@ -85,7 +80,6 @@ styleEl.textContent = `
     font-size:11px;
   }
 
-  /* Text hierarchy */
   .alum-name{
     font-weight:800;
     color:#0f172a;
@@ -148,7 +142,6 @@ map.on('load', async () => {
 
   map.addSource('alumni', { type: 'geojson', data });
 
-  // Solid navy circles, no outline, larger
   map.addLayer({
     id: 'alumni-bubbles',
     type: 'circle',
@@ -188,7 +181,7 @@ map.on('load', async () => {
       );
     }
 
-    new mapboxgl.Popup({ offset: 14, maxWidth: '640px' })
+    new mapboxgl.Popup({ offset: 14, maxWidth: '660px' })
       .setLngLat(f.geometry.coordinates)
       .setHTML(alumniPopupHTML(sameCity))
       .addTo(map);
