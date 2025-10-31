@@ -3,101 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AKPsi Alumni Map — Debug</title>
+  <title>AKPsi Alumni Map — Minimal</title>
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   <style>
     html,body,#map { height:100%; margin:0 }
     #map, .mapboxgl-canvas { pointer-events:auto !important; }
-    #debug { position:fixed; top:8px; left:8px; background:#000a; color:#fff; padding:6px 8px; font:12px system-ui; border-radius:6px; z-index:9 }
+    #dbg{position:fixed;left:8px;top:8px;background:#000a;color:#fff;padding:6px 8px;border-radius:6px;font:12px system-ui;z-index:9}
   </style>
 </head>
 <body>
-  <div id="debug">loading…</div>
+  <div id="dbg">loading…</div>
   <div id="map"></div>
 
   <script>
-    const TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
-    const STYLE = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
-    const DATA  = 'https://raw.githubusercontent.com/sophrosynable/akpsitesting/main/akpsi-alumni.geojson';
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
+    const dbg = (m)=>document.getElementById('dbg').textContent=m;
 
-    mapboxgl.accessToken = TOKEN;
+    // ---- your data (inline) ----
+    const ALUMNI = {
+      "type":"FeatureCollection",
+      "features":[
+        {"type":"Feature","properties":{"Name":"Dev Pereira","Company":"EY","City":"Chicago","Country":"USA","Industry":"Consulting","Logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/EY_logo_2019.svg/1200px-EY_logo_2019.svg.png"},"geometry":{"type":"Point","coordinates":[-87.623177,41.881832]}},
+        {"type":"Feature","properties":{"Name":"Todd Amatayakul","Company":"McKinsey & Company","City":"Bangkok","Country":"Thailand","Industry":"Consulting","Logo":"https://cdn.cookielaw.org/logos/353d36fb-3a1c-4021-b831-ee6d50361d6a/07a8989e-cba1-4f60-a67a-0ffe9efc1b3a/5705935c-c99f-48d8-8aef-b78127f4aed3/mckinsey---company_owler_20190728_090718_original.png"},"geometry":{"type":"Point","coordinates":[100.523186,13.736717]}},
+        {"type":"Feature","properties":{"Name":"Amaya Ghoshal","Company":"Goldman Sachs","City":"Boston","Country":"USA","Industry":"Finance","Logo":"https://1000logos.net/wp-content/uploads/2016/12/Goldman-Sachs-Logo.png"},"geometry":{"type":"Point","coordinates":[-71.0589,42.3601]}},
+        {"type":"Feature","properties":{"Name":"Christina Chen","Company":"Experian","City":"New York City","Country":"USA","Industry":"Tech","Logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Experian_logo.svg/2560px-Experian_logo.svg.png"},"geometry":{"type":"Point","coordinates":[-74.006,40.7128]}}
+      ]
+    };
+
+    // ---- map ----
     const map = new mapboxgl.Map({
-      container: 'map',
-      style: STYLE,
-      center: [-73.985, 40.758],   // mid-USA area-ish
-      zoom: 3,
-      projection: 'mercator'       // <-- IMPORTANT for this test
+      container:'map',
+      style:'mapbox://styles/mapbox/streets-v12',   // stock style
+      center:[-30,30],
+      zoom:2.3,
+      projection:'mercator'                         // reliable picking
     });
-    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    map.addControl(new mapboxgl.NavigationControl(),'top-right');
 
-    const dbg = (m)=> document.getElementById('debug').textContent = m;
-
-    function popupHTML(p) {
-      const name = p.Name || p.Full_Name || 'Unknown';
-      const company = p.Company || '';
-      const city = p.City || '', country = p.Country || '';
-      return `<div style="min-width:220px;font-family:system-ui">
-        <div style="font-weight:700;color:#041E42">${name}</div>
-        ${company?`<div>${company}</div>`:''}
-        ${(city||country)?`<div style="color:#666;font-size:12px">${city}${country?', '+country:''}</div>`:''}
+    const popupHTML = (p)=>`
+      <div style="min-width:220px;font-family:system-ui">
+        ${p.Logo?`<img src="${p.Logo}" style="width:84px;height:84px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 8px">`:''}
+        <div style="text-align:center">
+          <div style="font-weight:700;color:#041E42">${p.Name||'Unknown'}</div>
+          ${p.Company?`<div>${p.Company}</div>`:''}
+          ${(p.City||p.Country)?`<div style="color:#666;font-size:12px">${p.City||''}${p.Country?', '+p.Country:''}</div>`:''}
+          ${p.Industry?`<div style="margin-top:6px;font-size:12px;color:#999">${p.Industry}</div>`:''}
+        </div>
       </div>`;
-    }
 
-    map.on('load', async () => {
-      const res = await fetch(DATA, { cache:'no-cache' });
-      if (!res.ok) { dbg('geojson fetch failed '+res.status); return; }
-      const data = await res.json();
-      dbg(`features: ${data.features?.length || 0}`);
+    map.on('load', () => {
+      // source + layer
+      map.addSource('alumni', { type:'geojson', data: ALUMNI });
 
-      // Add source
-      map.addSource('alumni', { type:'geojson', data });
-
-      // BIG bubbles to ensure easy hit
       map.addLayer({
-        id: 'alumni-bubbles',
-        type: 'circle',
-        source: 'alumni',
-        filter: ['==', ['geometry-type'], 'Point'],
-        paint: {
-          'circle-radius': ['interpolate',['linear'],['zoom'], 0, 10, 4, 14, 8, 18, 12, 22],
-          'circle-color': '#041E42',
-          'circle-opacity': 0.9,
-          'circle-stroke-color': '#fff',
-          'circle-stroke-width': 2
+        id:'alumni-bubbles',
+        type:'circle',
+        source:'alumni',
+        paint:{
+          'circle-radius':['interpolate',['linear'],['zoom'], 0,8, 4,10, 8,12, 12,14],
+          'circle-color':'#041E42',
+          'circle-opacity':0.9,
+          'circle-stroke-color':'#fff',
+          'circle-stroke-width':2
         }
       });
 
-      // Make absolutely sure it's on top of the style’s layers
-      const topmost = map.getStyle().layers.at(-1).id;
-      if (topmost !== 'alumni-bubbles') map.moveLayer('alumni-bubbles');
+      // ensure it's at very top
+      map.moveLayer('alumni-bubbles');
+      dbg(`features: ${ALUMNI.features.length}`);
 
-      // Hover pointer
-      map.on('mousemove', (e) => {
-        const hits = map.queryRenderedFeatures(e.point, { layers: ['alumni-bubbles'] });
+      // hover cursor
+      map.on('mousemove',(e)=>{
+        const hits = map.queryRenderedFeatures(e.point,{layers:['alumni-bubbles']});
         map.getCanvas().style.cursor = hits.length ? 'pointer' : '';
       });
 
-      // Layer-bound click
-      map.on('click', 'alumni-bubbles', (e) => {
+      // layer click
+      map.on('click','alumni-bubbles',(e)=>{
         dbg('layer click');
-        const f = e.features?.[0];
-        if (!f) return;
-        new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
+        const f = e.features?.[0]; if(!f) return;
+        new mapboxgl.Popup({offset:12,maxWidth:'320px'})
           .setLngLat(f.geometry.coordinates)
-          .setHTML(popupHTML(f.properties || {}))
+          .setHTML(popupHTML(f.properties||{}))
           .addTo(map);
       });
 
-      // Fallback hit-test anywhere
-      map.on('click', (e) => {
-        const hits = map.queryRenderedFeatures(e.point, { layers: ['alumni-bubbles'] });
-        dbg(`map click, hits: ${hits.length}`);
-        if (hits.length) {
+      // fallback hit-test anywhere
+      map.on('click',(e)=>{
+        const hits = map.queryRenderedFeatures(e.point,{layers:['alumni-bubbles']});
+        dbg(`map click; hits: ${hits.length}`);
+        if(hits.length){
           const f = hits[0];
-          new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
+          new mapboxgl.Popup({offset:12,maxWidth:'320px'})
             .setLngLat(f.geometry.coordinates)
-            .setHTML(popupHTML(f.properties || {}))
+            .setHTML(popupHTML(f.properties||{}))
             .addTo(map);
         }
       });
