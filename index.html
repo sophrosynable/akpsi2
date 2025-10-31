@@ -1,102 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>AKPsi Alumni Map</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AKPsi Alumni Map — Debug</title>
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   <style>
-    html,body { height:100%; margin:0 }
-    #map { width:100%; height:100% }
-    /* make sure the canvas can receive clicks anywhere */
+    html,body,#map { height:100%; margin:0 }
     #map, .mapboxgl-canvas { pointer-events:auto !important; }
+    #debug { position:fixed; top:8px; left:8px; background:#000a; color:#fff; padding:6px 8px; font:12px system-ui; border-radius:6px; z-index:9 }
   </style>
 </head>
 <body>
+  <div id="debug">loading…</div>
   <div id="map"></div>
 
   <script>
-    const TOKEN      = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
-    const STYLE_URL  = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
-    const DATA_URL   = 'https://raw.githubusercontent.com/sophrosynable/akpsitesting/main/akpsi-alumni.geojson'; // <-- correct repo/name
+    const TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk1dHExIn0.Mx71kV2hMNjCtuuRLB37gw';
+    const STYLE = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
+    const DATA  = 'https://raw.githubusercontent.com/sophrosynable/akpsitesting/main/akpsi-alumni.geojson';
 
     mapboxgl.accessToken = TOKEN;
     const map = new mapboxgl.Map({
       container: 'map',
-      style: STYLE_URL,
-      center: [0, 20],
-      zoom: 1.4,
-      projection: 'globe'
+      style: STYLE,
+      center: [-73.985, 40.758],   // mid-USA area-ish
+      zoom: 3,
+      projection: 'mercator'       // <-- IMPORTANT for this test
     });
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
-    map.addControl(new mapboxgl.NavigationControl({ visualizePitch:true }), 'top-right');
-    map.on('style.load', () => map.setFog({}));
+    const dbg = (m)=> document.getElementById('debug').textContent = m;
 
     function popupHTML(p) {
-      const img = p.PhotoURL || p.Logo || p.Image || '';
-      const name = p.Name || p.Full_Name || p.Alumni || 'Unknown';
-      const company = p.Company || p.Company_Name || p.Organization || '';
-      const city = p.City || '';
-      const country = p.Country || '';
-      const industry = p.Industry || '';
-      return `
-        <div style="min-width:240px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica;">
-          ${img ? `<img src="${img}" style="width:84px;height:84px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 8px;">` : ''}
-          <div style="text-align:center;">
-            <div style="font-weight:700;color:#041E42">${name}</div>
-            ${company ? `<div>${company}</div>` : ''}
-            ${(city||country)?`<div style="color:#666;font-size:12px">${city}${country?', '+country:''}</div>`:''}
-            ${industry ? `<div style="margin-top:6px;font-size:12px;color:#999">${industry}</div>` : ''}
-          </div>
-        </div>`;
+      const name = p.Name || p.Full_Name || 'Unknown';
+      const company = p.Company || '';
+      const city = p.City || '', country = p.Country || '';
+      return `<div style="min-width:220px;font-family:system-ui">
+        <div style="font-weight:700;color:#041E42">${name}</div>
+        ${company?`<div>${company}</div>`:''}
+        ${(city||country)?`<div style="color:#666;font-size:12px">${city}${country?', '+country:''}</div>`:''}
+      </div>`;
     }
 
     map.on('load', async () => {
-      const res = await fetch(DATA_URL, { cache:'no-cache' });
-      if (!res.ok) { console.error('GeoJSON fetch failed:', res.status); return; }
+      const res = await fetch(DATA, { cache:'no-cache' });
+      if (!res.ok) { dbg('geojson fetch failed '+res.status); return; }
       const data = await res.json();
-      console.log('Loaded features:', data.features?.length || 0);
+      dbg(`features: ${data.features?.length || 0}`);
 
+      // Add source
       map.addSource('alumni', { type:'geojson', data });
 
-      // Navy bubbles
+      // BIG bubbles to ensure easy hit
       map.addLayer({
         id: 'alumni-bubbles',
         type: 'circle',
         source: 'alumni',
+        filter: ['==', ['geometry-type'], 'Point'],
         paint: {
-          'circle-radius': ['interpolate',['linear'],['zoom'], 1,6, 6,8, 10,10],
+          'circle-radius': ['interpolate',['linear'],['zoom'], 0, 10, 4, 14, 8, 18, 12, 22],
           'circle-color': '#041E42',
           'circle-opacity': 0.9,
           'circle-stroke-color': '#fff',
-          'circle-stroke-width': 1
+          'circle-stroke-width': 2
         }
       });
 
+      // Make absolutely sure it's on top of the style’s layers
+      const topmost = map.getStyle().layers.at(-1).id;
+      if (topmost !== 'alumni-bubbles') map.moveLayer('alumni-bubbles');
+
       // Hover pointer
       map.on('mousemove', (e) => {
-        const hits = map.queryRenderedFeatures(e.point, { layers:['alumni-bubbles'] });
+        const hits = map.queryRenderedFeatures(e.point, { layers: ['alumni-bubbles'] });
         map.getCanvas().style.cursor = hits.length ? 'pointer' : '';
       });
 
-      // Primary click handler (layer bound)
+      // Layer-bound click
       map.on('click', 'alumni-bubbles', (e) => {
-        const f = e.features && e.features[0];
+        dbg('layer click');
+        const f = e.features?.[0];
         if (!f) return;
-        new mapboxgl.Popup({ offset:12, maxWidth:'320px' })
+        new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
           .setLngLat(f.geometry.coordinates)
           .setHTML(popupHTML(f.properties || {}))
           .addTo(map);
       });
 
-      // Fallback click (hit-test) in case the layer binding is bypassed by the host
+      // Fallback hit-test anywhere
       map.on('click', (e) => {
-        const hits = map.queryRenderedFeatures(e.point, { layers:['alumni-bubbles'] });
-        console.log('Click hits:', hits.length);
+        const hits = map.queryRenderedFeatures(e.point, { layers: ['alumni-bubbles'] });
+        dbg(`map click, hits: ${hits.length}`);
         if (hits.length) {
           const f = hits[0];
-          new mapboxgl.Popup({ offset:12, maxWidth:'320px' })
+          new mapboxgl.Popup({ offset: 12, maxWidth: '320px' })
             .setLngLat(f.geometry.coordinates)
             .setHTML(popupHTML(f.properties || {}))
             .addTo(map);
