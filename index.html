@@ -174,9 +174,9 @@ function formatGradYear(raw) {
   return s;
 }
 function getGradYear(props) {
-  // Accept multiple possible keys from your GeoJSON
   return (
     props.GradYear ||
+    props["Graduation Year"] ||  // ← ADD THIS LINE
     props.GraduationYear ||
     props.GraduatingYear ||
     props.Year ||
@@ -184,6 +184,7 @@ function getGradYear(props) {
     ''
   );
 }
+
 
 /* ---------- Popup builder ---------- */
 function alumniPopupHTML(features) {
