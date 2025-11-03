@@ -166,25 +166,45 @@ styleEl.textContent = `
 document.head.appendChild(styleEl);
 
 /* ---------- Helpers for Graduation Year ---------- */
+// Normalize any year-like value to 'YY if it's a 4-digit year
 function formatGradYear(raw) {
-  if (!raw) return '';
-  const s = String(raw).trim();
-  // If it's a 4-digit year, show as ’YY (e.g., 2026 -> ’26). Otherwise show as-is.
-  if (/^\d{4}$/.test(s)) return '’' + s.slice(-2);
-  return s;
-}
-function getGradYear(props) {
-  return (
-    props.GradYear ||
-    props["Graduation Year"] ||  // ← ADD THIS LINE
-    props.GraduationYear ||
-    props.GraduatingYear ||
-    props.Year ||
-    props.ClassYear ||
-    ''
-  );
+  if (raw == null) return '';
+  // Pull a 4-digit year if present anywhere (handles "Class of 1995")
+  const m = String(raw).match(/(19|20)\d{2}/);
+  const y = m ? m[0] : String(raw).trim();
+  return /^(19|20)\d{2}$/.test(y) ? '’' + y.slice(-2) : y;
 }
 
+// Find a year regardless of key spelling/spaces/case (covers "Graduation Year")
+function getGradYear(props = {}) {
+  // quick checks for common keys first
+  const direct =
+    props.GradYear ??
+    props['Grad Year'] ??
+    props['Graduation Year'] ??   // ← your key
+    props.GraduationYear ??
+    props.GraduatingYear ??
+    props['Class Year'] ??
+    props.ClassYear ??
+    props.Year ??
+    props['Class of'];
+  if (direct) return direct;
+
+  // fallback: scan all keys with normalization (handles weird spaces like U+00A0)
+  for (const [k, v] of Object.entries(props)) {
+    const norm = k.replace(/\s|[\u00A0_]/g, '').toLowerCase(); // remove spaces/nbspace/underscores
+    if (
+      norm.includes('graduationyear') ||
+      norm.includes('gradyear') ||
+      norm.includes('classyear') ||
+      norm.includes('classof') ||
+      norm === 'year'
+    ) {
+      return v;
+    }
+  }
+  return '';
+}
 
 /* ---------- Popup builder ---------- */
 function alumniPopupHTML(features) {
