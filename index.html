@@ -19,6 +19,9 @@ const MAPBOX_TOKEN = 'pk.eyJ1Ijoia3RyYW4yNCIsImEiOiJjbWhkaDBodW8wMzBnMnRwcnRrZjk
 const STYLE_URL    = 'mapbox://styles/ktran24/cmhdt73un001f01qvfzyndnek';
 const GEOJSON_URL  = 'alumni.geojson'; // or your raw URL
 
+/* Show year under name? (true) or inline next to name? (false) */
+const YEAR_BELOW_NAME = false;
+
 mapboxgl.accessToken = MAPBOX_TOKEN;
 const map = new mapboxgl.Map({
   container: 'map',
@@ -127,37 +130,32 @@ styleEl.textContent = `
     margin-top: 4px;
   }
 
+  /* Year styling */
+  .alum-year {
+    margin-left: 6px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.2px;
+  }
+  .alum-yearline {
+    color: #6b7280;
+    font-size: 15px;
+    margin-top: 2px;
+  }
+
   /* ---------- Responsive adjustments ---------- */
   @media (max-width: 768px) {
     .mapboxgl-popup-content {
       padding: 12px 14px 14px 14px;
       max-width: 90vw;
     }
-    .alum-wrap {
-      width: 100%;
-    }
-    .alum-list {
-      max-height: 320px;
-      gap: 14px;
-    }
-    .alum-card {
-      grid-template-columns: 80px 1fr;
-      gap: 16px;
-    }
-    .alum-logo {
-      width: 80px;
-      height: 80px;
-      padding: 6px;
-    }
-    .alum-name {
-      font-size: 18px;
-    }
-    .alum-company {
-      font-size: 16px;
-    }
-    .alum-meta {
-      font-size: 14px;
-    }
+    .alum-wrap { width: 100%; }
+    .alum-list { max-height: 320px; gap: 14px; }
+    .alum-card { grid-template-columns: 80px 1fr; gap: 16px; }
+    .alum-logo { width: 80px; height: 80px; padding: 6px; }
+    .alum-name { font-size: 18px; }
+    .alum-company { font-size: 16px; }
+    .alum-meta { font-size: 14px; }
     .mapboxgl-popup-close-button {
       font-size: 22px !important;
       top: 4px !important;
@@ -165,8 +163,27 @@ styleEl.textContent = `
     }
   }
 `;
-
 document.head.appendChild(styleEl);
+
+/* ---------- Helpers for Graduation Year ---------- */
+function formatGradYear(raw) {
+  if (!raw) return '';
+  const s = String(raw).trim();
+  // If it's a 4-digit year, show as ’YY (e.g., 2026 -> ’26). Otherwise show as-is.
+  if (/^\d{4}$/.test(s)) return '’' + s.slice(-2);
+  return s;
+}
+function getGradYear(props) {
+  // Accept multiple possible keys from your GeoJSON
+  return (
+    props.GradYear ||
+    props.GraduationYear ||
+    props.GraduatingYear ||
+    props.Year ||
+    props.ClassYear ||
+    ''
+  );
+}
 
 /* ---------- Popup builder ---------- */
 function alumniPopupHTML(features) {
@@ -174,15 +191,29 @@ function alumniPopupHTML(features) {
   const header = [p0.City || '', p0.Country || ''].filter(Boolean).join(', ');
 
   const cards = features.map(f => {
-    const p   = f.properties || {};
-    const img = p.PhotoURL || p.Photo || p.Logo || '';
+    const p     = f.properties || {};
+    const img   = p.PhotoURL || p.Photo || p.Logo || '';
+    const yrRaw = getGradYear(p);
+    const yrFmt = formatGradYear(yrRaw);
+
+    const nameLine = `
+      <div class="alum-name">
+        ${p.Name || ''}
+        ${(!YEAR_BELOW_NAME && yrFmt) ? `<span class="alum-year">${yrFmt}</span>` : ''}
+      </div>
+    `;
+    const yearLine = (YEAR_BELOW_NAME && yrFmt)
+      ? `<div class="alum-yearline">${yrFmt}</div>`
+      : '';
+
     return `
       <div class="alum-card">
         ${img
           ? `<img class="alum-logo" src="${img}" alt="" loading="lazy" />`
           : `<div class="alum-logo placeholder">No image</div>`}
         <div>
-          <div class="alum-name">${p.Name || ''}</div>
+          ${nameLine}
+          ${yearLine}
           <div class="alum-company">${p.Company || ''}</div>
           <div class="alum-meta">${p.Industry || ''}</div>
         </div>
