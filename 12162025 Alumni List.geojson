@@ -1,0 +1,3645 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Daphne Cheung",
+        "Graduation Year": "",
+        "Company": "Instacart",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Strategy",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSuJCu6s2XDXr-cwtYrB3z1tI7Wq5wOkJ0sQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "0160b9763964e0dc63ad1a4ad7238d65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Gloria Lee",
+        "Graduation Year": "2021",
+        "Company": "Blackstone",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://logos-world.net/wp-content/uploads/2023/10/Blackstone-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "028fda8a07c251f57cab0e9b8ecfd313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Maya Gupta",
+        "Graduation Year": "2020",
+        "Company": "Inspira Advantage",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFIIlNzz79nnFcfoY0rpz1E9DwuuMlWh_Ug&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "02c80ada96457c600fdcb456c2526ec2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jack McGauley",
+        "Graduation Year": "2022",
+        "Company": "CCR Wealth Management",
+        "City": "Westborough",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://ccrwealth.com/wp-content/uploads/2017/05/CCR_Logo_Primary_CMYK_1024x500_300dpi.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.6162,
+          42.2695
+        ],
+        "type": "Point"
+      },
+      "id": "0308204c392b1b016610447e0d7b62b2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Matthew Bow",
+        "Graduation Year": "2024",
+        "Company": "Blackstone",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/The_Blackstone_Group_logo_%282%29.svg/2560px-The_Blackstone_Group_logo_%282%29.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "031128583ad967426fc2c08e54674afc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Teresa Wolf ",
+        "Graduation Year": "2017",
+        "Company": "Boston Scientific",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/0/02/Boston_Scientific_Logo.svg"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "076bde2f80b24b0f67e71e31b447544b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Todd Amatayakul",
+        "Graduation Year": "2025",
+        "Company": "McKinsey & Company",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Consulting",
+        "Logo": "https://cdn.cookielaw.org/logos/353d36fb-3a1c-4021-b831-ee6d50361d6a/07a8989e-cba1-4f60-a67a-0ffe9efc1b3a/5705935c-c99f-48d8-8aef-b78127f4aed3/mckinsey---company_owler_20190728_090718_original.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "07f01a35f83b973b208ba1b38d0c464b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Vasundhra Puri",
+        "Graduation Year": "2019",
+        "Company": "Commonwealth Financial Group",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Strategy",
+        "Logo": "https://images.squarespace-cdn.com/content/v1/5e82502961d1304a8509bdb3/1597259892247-U5RKPB0P4HGOWB6OTI23/CFG+Logo+color+RGB+300dpi.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "08491744cdc1191788c91d27ab217121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Michael Horbowy",
+        "Graduation Year": "2017",
+        "Company": "Jefferies",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Jefferies_logo.svg/1200px-Jefferies_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "09184632c49f24d6c9eeb5680654d737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Freda Yuan",
+        "Graduation Year": "2020",
+        "Company": "AlixPartners",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech, Strategy",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2j3gr0fiv_D0KrasMqknlpssodiudjkea4A&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "0e0d05ee4e6c979910f8c1cd5d068f55"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Julian Ramcharan",
+        "Graduation Year": "2024",
+        "Company": "US Bank",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGTHhTdyWLT4n_p89LhnXcYIHztRFegGYQkQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "0e1fc0b76683d4ec69dbf562c3f2e89a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "James Knight",
+        "Graduation Year": "1987",
+        "Company": "The Knight Group, LLC",
+        "City": "Florida",
+        "Country": "USA",
+        "Industry": "Real Estate",
+        "Logo": "https://static.wixstatic.com/media/522716_8948de18e6ef4a60bbe64e6c7794e5ba~mv2.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.760254,
+          27.994402
+        ],
+        "type": "Point"
+      },
+      "id": "0eacc036ccd5b6e633aaa55f8d8bc0f2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Debbie He",
+        "Graduation Year": "2018",
+        "Company": "SEPHORA",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sephora_logo.svg/2560px-Sephora_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "1174b795b150f1f8ce3a7d25373ae0da"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aiko Saeki",
+        "Graduation Year": "2025",
+        "Company": "Boston Consulting Group",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Consulting",
+        "Logo": "https://web-assets.bcg.com/dims4/default/a7425a2/2147483647/strip/true/crop/432x109+0+0/resize/768x194!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2Fcf%2F56%2F37f3302740138f48fea36a8a41b7%2Ftest-bcg-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "129dabdfd3ad4e9b280f275822159e59"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hannah Pérez",
+        "Graduation Year": "2020",
+        "Company": "Neville Peterson LLP",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Law",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItd7q6GwU5evwCOYqrnwcoaZ84_Z2TJruBQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "132c6d5b3ab6e30526db3d61b7085f49"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McLane Cover",
+        "Graduation Year": "1984",
+        "Company": "J.P. Morgan",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://pbs.twimg.com/profile_images/1605200105799401474/9cb5qdVk_400x400.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "133a5a98db55050038d744deeea22361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Antonio Tabet",
+        "Graduation Year": "2019",
+        "Company": "Verition Fund Management LLC",
+        "City": "London",
+        "Country": "UK",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Verition_Fund_Management.svg/2560px-Verition_Fund_Management.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -0.118092,
+          51.509865
+        ],
+        "type": "Point"
+      },
+      "id": "1968fdfe79fbe5eef0daab3533e41d60"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Roberto Tabet",
+        "Graduation Year": "2018",
+        "Company": "Dubai Future District Fund",
+        "City": "Dubai",
+        "Country": "UAE",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWDeWuAuvcvK1KKoMC7M9lmCQbA04ziPanHA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          55.296249,
+          25.276987
+        ],
+        "type": "Point"
+      },
+      "id": "1c08ec8413d8de7873ba94c1659d0223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kareem ElHeneidi",
+        "Graduation Year": "1992",
+        "Company": "Arzan U.S.",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/D560BAQGtvcgJSaAm7Q/company-logo_200_200/company-logo_200_200/0/1691551879285?e=2147483647&v=beta&t=8DLK8F2YsCfWc1ilW4uUmKhyrsPQs7a9QaVM1fozW3I"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "1ca7fa1e0638af9754c316ac7c682f48"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Connie Ly",
+        "Graduation Year": "2021",
+        "Company": "EssenceMediacom",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHPGk0KisOHug/company-logo_200_200/B4EZlcMXcuIkAI-/0/1758188370225/essencemediacom_logo?e=2147483647&v=beta&t=9Q5sfMGcSOrTXI70cb0O8k_u9SKi4OtJz-QHjUSTrZ8"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "205139e54f6771733a91acb442e6e6ff"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Cliff Meijer",
+        "Graduation Year": "1995",
+        "Company": "Headway Capital Partners",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZj9zLm274tYgRNlb7xmjPxGSbLGEnS8d-A&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "22744408dd158e63062bf6f275612e65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Julia Dean ",
+        "Graduation Year": "2019",
+        "Company": "UNODC",
+        "City": "Vienna",
+        "Country": "Austria",
+        "Industry": "HR",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmgATSODZEyESlonSMB4df20aJo3SsgCdqNw&s"
+      },
+      "geometry": {
+        "coordinates": [
+          16.363449,
+          48.210033
+        ],
+        "type": "Point"
+      },
+      "id": "22bb0f1fb3d1de4728c8e184c9451c6c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Amy Li",
+        "Graduation Year": "2023",
+        "Company": "Clarion Partners LLC",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://res.cloudinary.com/cais/image/upload/v1692902101/pws/logos/Asset%20manager%20icons/Clarion-Partners-Logo-stacked-positive-RGB_e78fi5.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "24709471973675788a63d537a3e3c594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Joe Nash",
+        "Graduation Year": "2020",
+        "Company": "Riveron",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGw-5XFaGgus56GAHve1D22sP_NpoRyrHSuQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "24ed3261b517a413f6f406c6c735b1ac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Julie Zhou",
+        "Graduation Year": "2017",
+        "Company": "CVS Health",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaozF1nulMhSWDOdcaCXgTReg_-oK5flSo4w&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "252471aee22b75965c131b9ba00b6ee3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nanette Fleming",
+        "Graduation Year": "",
+        "Company": "Stonebridge Advisors LLC",
+        "City": "Wilton",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://static1.squarespace.com/static/5ae344964611a0fa7c29a4c7/t/688a52885a56be0fddbb5602/1757603508638/"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.744286,
+          43.180073
+        ],
+        "type": "Point"
+      },
+      "id": "2687f9a6f6fbd0ea203edfe0632a6b01"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nikhil Goyal",
+        "Graduation Year": "2020",
+        "Company": "Amazon",
+        "City": "Conneticut",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -72.699997,
+          41.599998
+        ],
+        "type": "Point"
+      },
+      "id": "2a0baa968160091fc339e3f050d5d9c8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Caitlin Coronel",
+        "Graduation Year": "2020",
+        "Company": "Wee Community Developers, Inc.",
+        "City": "Manila",
+        "Country": "Philippines",
+        "Industry": "Tech",
+        "Logo": "https://destinedavao.ph/images/wee-commnunity-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          120.9822,
+          14.6042
+        ],
+        "type": "Point"
+      },
+      "id": "32730bb90c2dff0bb1a96187fe7513a3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "William Greco",
+        "Graduation Year": "1985",
+        "Company": "UBS",
+        "City": "Hartford",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/3/34/UBS_Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -72.685097,
+          41.76371
+        ],
+        "type": "Point"
+      },
+      "id": "33aa5dc86b92378e05f5f569b0accaf4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Benjamin Lazar",
+        "Graduation Year": "1991",
+        "Company": "Market and More",
+        "City": "San Jose",
+        "Country": "Costa Rica",
+        "Industry": "Tech",
+        "Logo": "https://marketandmorecr.com/wp-content/uploads/2025/08/cropped-top-no-bg-104834_Market-and-More_Flat_PD_DK_01-1.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.087502,
+          9.934739
+        ],
+        "type": "Point"
+      },
+      "id": "3575602bf65c800e0f18a27a0b56f238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Stephen Kurtz",
+        "Graduation Year": "1972",
+        "Company": "MuscleSound",
+        "City": "Denver",
+        "Country": "USA",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://www.musclesound.com/wp-content/uploads/2021/08/musclesound_logo_kit_logo_full_color_rgb_5in@72ppi.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -104.991531,
+          39.742043
+        ],
+        "type": "Point"
+      },
+      "id": "396aad1762f98f14916ce78ebaadbc7d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Duruo Murray",
+        "Graduation Year": "2021",
+        "Company": "Brown Brothers Harriman",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Brown_Brothers_Harriman_Logo_1.svg/1200px-Brown_Brothers_Harriman_Logo_1.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "41ad8dbecf7187e6cee073d82ed3065a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Vinay Santhanam",
+        "Graduation Year": "2018",
+        "Company": "Dura Chemicals, Inc",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://media.licdn.com/dms/image/v2/C560BAQFgO3Z4tySPaA/company-logo_200_200/company-logo_200_200/0/1631385752576?e=2147483647&v=beta&t=PNanld5xSU4dgvQXICKWRsKbD97jbY7NUTNJOnJNtZ8"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "424b1851147fcabc3f0b5df488c82129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "John Chaple",
+        "Graduation Year": "1986",
+        "Company": "ProCFO Partners",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ZIx052BwUNDYmhXMXr05dBPSGbW5Wl4vmA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "43b1a38e5f6791eed8a8aab915051df2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Eric Rahn ",
+        "Graduation Year": "1981",
+        "Company": "Crewsure Americas",
+        "City": "Boca Raton",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://crewsure.com/wp-content/uploads/2025/03/cslogo-rgb-300dpi.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.12236,
+          26.376032
+        ],
+        "type": "Point"
+      },
+      "id": "449421ea02621728a1df65fc997f531f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Rakel Ertovi",
+        "Graduation Year": "2018",
+        "Company": "Sanamekan",
+        "City": "Istanbul",
+        "Country": "Turkey",
+        "Industry": "Marketing",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHxL4cNrSTv9AUq516RM2GZiMkYsTarY057g&s"
+      },
+      "geometry": {
+        "coordinates": [
+          28.97953,
+          41.015137
+        ],
+        "type": "Point"
+      },
+      "id": "462b3c3685deece8dccb21f01571c62e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Amani Sutton",
+        "Graduation Year": "",
+        "Company": "Frida",
+        "City": "Miami",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQewEiT3jFf4zPsDHz_FaDXLsppf4ubYy1hRQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.191788,
+          25.761681
+        ],
+        "type": "Point"
+      },
+      "id": "46b2a37b0e2dbbd4f89c091c78fbc7c7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ronald Liu Jr",
+        "Graduation Year": "2024",
+        "Company": "KPMG",
+        "City": "San Mateo",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFvjYw4njJhAPNofEmg7eF6_61TQxlmHEOw&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.313057,
+          37.554169
+        ],
+        "type": "Point"
+      },
+      "id": "488bdaeb3e6ad3972644071bf7530b84"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "David Grebe",
+        "Graduation Year": "1989",
+        "Company": "Converge",
+        "City": "Peabody",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/5/56/Converge_ICT_Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -70.985786,
+          42.536457
+        ],
+        "type": "Point"
+      },
+      "id": "4b537b5ec34477e7454539ac95b4d93b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Patrick Carroll",
+        "Graduation Year": "1993",
+        "Company": "Jasper Wyman & Son",
+        "City": "Portland",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://i0.wp.com/stephscheersandjeers.com/wp-content/uploads/2015/12/logo-1.png?resize=278%2C170"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.676483,
+          45.523064
+        ],
+        "type": "Point"
+      },
+      "id": "4bd302970571e5dd5c7a0fbcca6aad77"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nicholas Cho",
+        "Graduation Year": "2023",
+        "Company": "Calbee",
+        "City": "Fairfield",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Calbee_logo.svg/1280px-Calbee_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.271111,
+          41.146496
+        ],
+        "type": "Point"
+      },
+      "id": "4cab725d12644fd2a9c03539328d65a9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Darren Tolib",
+        "Graduation Year": "2023",
+        "Company": "EY-Parthenon",
+        "City": "Jakarta",
+        "Country": "Indonesia",
+        "Industry": "Consulting",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/EY_Parthenon_logo.svg/250px-EY_Parthenon_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          106.816666,
+          -6.2
+        ],
+        "type": "Point"
+      },
+      "id": "4d4c8d856897c91a681b0831c36ef928"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nicholas Taniadi",
+        "Graduation Year": "",
+        "Company": "Maxxi Tani",
+        "City": "Jakarta",
+        "Country": "Indonesia",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://cdn.prod.website-files.com/5e9ef44e3152d50d2004d921/604ef99f72b9abfa9f5e846f_Maxxi%20Tani.png"
+      },
+      "geometry": {
+        "coordinates": [
+          106.816666,
+          -6.2
+        ],
+        "type": "Point"
+      },
+      "id": "4e45f59ea5f54ebb631e6ba73a0522a5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Richard Maunz",
+        "Graduation Year": "1973",
+        "Company": "Predential Florida Realty",
+        "City": "Florida",
+        "Country": "USA",
+        "Industry": "Real Estate",
+        "Logo": "https://levelrealty.com/wp-content/uploads/2024/11/Level-LOGO_Black-scaled.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.760254,
+          27.994402
+        ],
+        "type": "Point"
+      },
+      "id": "4ff36df284b5c865ee22eb57022fad6d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sakshi Haria",
+        "Graduation Year": "2021",
+        "Company": "Amazon",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "52a94513ded5b95f63a91e49ddbefad6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sean Joyce",
+        "Graduation Year": "1995",
+        "Company": "Lurkis, Joyce & Del Bove, LLP",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Law",
+        "Logo": "https://ljdfamilylaw.com/wp-content/uploads/2023/04/lurkis-joyce-del-bove-family-law-san-francisco_logo_dark_700p.webp"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "531aa11e45d5818c3fdc6902e6919f99"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bradley Qian ",
+        "Graduation Year": "2018",
+        "Company": "InnovAsian",
+        "City": "Seattle",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://eatinnovasian.com/images/innovasian-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.335167,
+          47.608013
+        ],
+        "type": "Point"
+      },
+      "id": "539380879e89578977553ccb27148db6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Pranay Jethwani",
+        "Graduation Year": "2020",
+        "Company": "Geebee Group",
+        "City": "Dubai",
+        "Country": "UAE",
+        "Industry": "Strategy",
+        "Logo": "https://media.licdn.com/dms/image/v2/D4D0BAQGFZMfsg8KTSg/company-logo_200_200/company-logo_200_200/0/1705479747857?e=2147483647&v=beta&t=lXQhGIanjZwhbguXCe0KrdNX2e2vnct0a_ypFajwwxo"
+      },
+      "geometry": {
+        "coordinates": [
+          55.296249,
+          25.276987
+        ],
+        "type": "Point"
+      },
+      "id": "5475a3c177a8d250f6bee15348be331c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Robert Duffy",
+        "Graduation Year": "",
+        "Company": "Berkley Research Group (BRG)",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://consent.trustarc.com/v2/asset/14:40:07.539nmhd79_BRG_Alone_WEB.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "55fc68bd61351130ea358f0bfd4230dc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Roger Marwill",
+        "Graduation Year": "",
+        "Company": "Teledoc Health",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Teladoc_Health_logo.svg/1200px-Teladoc_Health_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "5757b83cb957629014f266885caa30e3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kaity Goodwin",
+        "Graduation Year": "2022",
+        "Company": "TD Garden",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/TD_Garden_Logo-Primary.svg/2560px-TD_Garden_Logo-Primary.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "580061272fa4896344e8a73e888dfcd9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Connie Hsu",
+        "Graduation Year": "2018",
+        "Company": "Resilient Strategies LLC",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://images.squarespace-cdn.com/content/v1/65ef89c21defe16cdf10a160/8a17d795-6c01-4a4b-b151-f818109e0bb8/RS_Logo_COLOR.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "584e5e661971b9015d4ec836b5d6fb6a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jana Godbole",
+        "Graduation Year": "",
+        "Company": "AlphaSense",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://logos-world.net/wp-content/uploads/2025/08/AlphaSense-Symbol.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "58fffdcb3e9b01970b10ddc7eb937836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nicholas Widjaja",
+        "Graduation Year": "2021",
+        "Company": "Curve Analytics",
+        "City": "London",
+        "Country": "UK",
+        "Industry": "Consulting",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCcDs19FmOZk4tjMzTRAStVveBS_AawDSzLg&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -0.118092,
+          51.509865
+        ],
+        "type": "Point"
+      },
+      "id": "5b1739fa4d4c98f70eaa7a05cdc1e4d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bryan Tjoajadi",
+        "Graduation Year": "2020",
+        "Company": "Wayfair",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://companieslogo.com/img/orig/W-df75d44f.png?t=1720749388"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "5b1fe5e9fb692c72ca4926e0f2991096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sarah Liu",
+        "Graduation Year": "2019",
+        "Company": "PwC",
+        "City": "Los Angeles",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://images.seeklogo.com/logo-png/61/3/pricewaterhousecoopers-pwc-logo-png_seeklogo-619359.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.243683,
+          34.052235
+        ],
+        "type": "Point"
+      },
+      "id": "5c59ef8b13e45f05c7f03960ae3f2fec"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bambi Nandabhiwat",
+        "Graduation Year": "2025",
+        "Company": "Deloitte",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Consulting",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_Deloitte.svg/1200px-Logo_of_Deloitte.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "607736a24cd366621a3370bfbb58ea33"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Janice Monsanto",
+        "Graduation Year": "2023",
+        "Company": "J.P. Morgan",
+        "City": "Jakarta",
+        "Country": "Indonesia",
+        "Industry": "Finance",
+        "Logo": "https://pbs.twimg.com/profile_images/1605200105799401474/9cb5qdVk_400x400.png"
+      },
+      "geometry": {
+        "coordinates": [
+          106.816666,
+          -6.2
+        ],
+        "type": "Point"
+      },
+      "id": "634ec92e44d5f1bf1aa8418317f04b2a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Maxine Anderson",
+        "Graduation Year": "2022",
+        "Company": "Arist",
+        "City": "Portland",
+        "Country": "USA",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://framerusercontent.com/images/fm4AtNo2ANtdVZLFQK4eUJfvE4.png?width=2500&height=1000"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.676483,
+          45.523064
+        ],
+        "type": "Point"
+      },
+      "id": "63aab8f8ef0ec88c084382b8fa98a7a6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bart Karlson",
+        "Graduation Year": "",
+        "Company": "Siemens Energy",
+        "City": "Orlando",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Siemens_Energy_logo.svg/2560px-Siemens_Energy_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.379234,
+          28.538336
+        ],
+        "type": "Point"
+      },
+      "id": "642dbef78ace58ec3da2e9a24c2ea2ff"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Chelsea Jang",
+        "Graduation Year": "",
+        "Company": "nirvanaHealth",
+        "City": "Suffolk County",
+        "Country": "USA",
+        "Industry": "Strategy",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0JFnLkHmwUfMc2oI6O5AuAusZT9IbiTBnA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -72.68524,
+          40.94046
+        ],
+        "type": "Point"
+      },
+      "id": "65df8bff066d6a168569aafa59b7288b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sumer Sen",
+        "Graduation Year": "2023",
+        "Company": "Microsoft",
+        "City": "Seattle",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.335167,
+          47.608013
+        ],
+        "type": "Point"
+      },
+      "id": "666a87a34736473cf41194f6943c8114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Medha Kolhe",
+        "Graduation Year": "2021",
+        "Company": "Citi ",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Citi.svg/2560px-Citi.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "66da14c2d323c1c7f00331ff50b89739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Athena Furuta",
+        "Graduation Year": "2020",
+        "Company": "Cariina",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/53f7bedca2df48f5903f41e317c3eb3b?ik-sanitizeSvg=true"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "66fb0c358be5b1a57e652304184a4c55"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mark Ryan",
+        "Graduation Year": "2024",
+        "Company": "Amazon",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "68a55f50cf52b80c9fd985c694575f0a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kareena Ramani ",
+        "Graduation Year": "2018",
+        "Company": "kodanmal",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Sales",
+        "Logo": "https://www.kodanmal.com/images/Kodanmal-Logo-01.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "6943e9ef0b1b17ab3b2311057bb79628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Makie Lin",
+        "Graduation Year": "2018",
+        "Company": "Blue Wolf Capital Partners",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/6/65/Blue_Wolf_Capital_Partners_logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "6a4a7f509320c348f720dd1d0f56be1e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Miceal Chamberlain",
+        "Graduation Year": "",
+        "Company": "Coldwell Banker",
+        "City": "Madison",
+        "Country": "USA",
+        "Industry": "Real Estate",
+        "Logo": "https://1000logos.net/wp-content/uploads/2018/12/Coldwell-Banker-logo.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.40123,
+          43.073051
+        ],
+        "type": "Point"
+      },
+      "id": "6a8ab82e7929c9e438d8c1d27a012087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Rahul Shah",
+        "Graduation Year": "2018",
+        "Company": "Socure",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://mma.prnewswire.com/media/2203821/Primary_Logo_CMYK_TM_large_Logo.jpg?p=twitter"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "6d02207dd527abbbb731e1863c619604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Chibuzo Obasi",
+        "Graduation Year": "2016",
+        "Company": "Skadden",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Law",
+        "Logo": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_25c76bc70f41c1115a98db3588052647/skadden-arps-slate-meagher-flom-llp-and-affiliates.jpeg"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "6feaa202089f815581be301fa0f5ceb4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aidan Dennis",
+        "Graduation Year": "",
+        "Company": "ByHeart",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://media.licdn.com/dms/image/v2/C4E0BAQFz0TRNU7JSNw/company-logo_200_200/company-logo_200_200/0/1630625649853/byheartnutrition_logo?e=2147483647&v=beta&t=hfcldfLOUi_4AwAa7malgS8gIOnijb3hSEKezHj0J8Q"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "71587ef0b7b16d6ad54c2b136cee7278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Choying Dechen",
+        "Graduation Year": "2023",
+        "Company": "Analytic Partners",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://lever-client-logos.s3.us-west-2.amazonaws.com/674e1cf5-2b86-44e3-96ee-5a40ef60f0f2-1682091269133.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "71a55508c31f1f37996728aa4b9670a4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kevin Jiang",
+        "Graduation Year": "2020",
+        "Company": "DJI",
+        "City": "Shenzhen",
+        "Country": "China",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhCA12zW1f4XDn6brtv7IA7dzMmCuDB-9F4A&s"
+      },
+      "geometry": {
+        "coordinates": [
+          114.062996,
+          22.542883
+        ],
+        "type": "Point"
+      },
+      "id": "724ce68ca64116d036144ec13a6275aa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nicholas Martinez",
+        "Graduation Year": "2021",
+        "Company": "Impax Asset Management",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://assets.worldbenchmarkingalliance.org/app/uploads/2024/03/Horizontal-colour_AM-002.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "7820af0033476098924f0ba949b89542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sree Dasari",
+        "Graduation Year": "2023",
+        "Company": "BAE Systems",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB9_A9GmQvTMVTjRFoEfgfNYncl7IykOJHrA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "7980a92b84895bf61aa57e611869a059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Yongbin Wen",
+        "Graduation Year": "",
+        "Company": "Riverside Partners",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/eukssclmvgxw3o8qbzei?ik-sanitizeSvg=true"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "7c4daa529a29d9a70fa4e25f9737786f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Maya Sujanto",
+        "Graduation Year": "2023",
+        "Company": "Berri Organics",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://berriorganics.com/cdn/shop/files/001-05329-Berri-Logo_Kit_CMYK_Primary_Stacked-Blue_1200x1200.png?v=1678223630"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "7c6a16d760ce1acdc0197480f48da770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Noah Doris",
+        "Graduation Year": "2020",
+        "Company": "Goba Tea",
+        "City": "Miami",
+        "Country": "USA",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://media.licdn.com/dms/image/v2/C4D0BAQGO4uRcEhN_mA/company-logo_200_200/company-logo_200_200/0/1630559990551/goba_tea_logo?e=2147483647&v=beta&t=RrfGOo7Re7Jo1t0Swl-cBXAevkvsPfVA9B-E5ChHisQ"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.191788,
+          25.761681
+        ],
+        "type": "Point"
+      },
+      "id": "7f2dba736de02d2db41e920e904dba59"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ken Horvath",
+        "Graduation Year": "1974",
+        "Company": "Horvath & Company LLC",
+        "City": "Hubbardston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/C4E0BAQFmPmjB8K0XEw/company-logo_200_200/company-logo_200_200/0/1656659387650/horvath_partners_management_consulting_corp_logo?e=2147483647&v=beta&t=wdAy27_RmhhZWl3wicW5DQU6fb7kC-u3CJLMiHAPsWQ"
+      },
+      "geometry": {
+        "coordinates": [
+          -72.0062,
+          42.4737
+        ],
+        "type": "Point"
+      },
+      "id": "806f58b08ef12b66a4ca4ac36e4f4953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nicholas Lee",
+        "Graduation Year": "2024",
+        "Company": "Citizens JMP",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://mms.businesswire.com/media/20211115006284/en/415566/4/CFG_Inc_TM_c.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "81835b44c441a3e8fd0210a0b424fee9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nijanth Velmanikandan ",
+        "Graduation Year": "",
+        "Company": "Morning Brew Inc.",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9fmgDQ3HQ6zegWCksxFbxi4MT6OCrBTokKQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "8223b8aedf36e7397d9768b48c8fa367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kenji Walker ",
+        "Graduation Year": "2018",
+        "Company": "QIS Risk",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDaSSTEhNuJWsWZB7klNVps6XocVQy9m9jew&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "82f03daff94c00aac40df45f083410bf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Liam Early",
+        "Graduation Year": "2022",
+        "Company": "Definitive Healthcare",
+        "City": "Framingham",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/OIJGO2CLTNBQLLGWLLHVAC6PHE.jpg?auth=31e49d213b71ba072ebc963ea231ec60dfbbf14be8217c10d4d8a3463f623fad&width=1440"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.4162,
+          42.2793
+        ],
+        "type": "Point"
+      },
+      "id": "83162c91fe9282739d8ecba9ece071bc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Robert DeLisa",
+        "Graduation Year": "1985",
+        "Company": "Cooperative Systems",
+        "City": "Stonington",
+        "Country": "USA",
+        "Industry": "Entrepreneurship, Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG6je-b_yaN98UCaEGmSCJSph0d1rBYm1lWg&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.914299,
+          41.343838
+        ],
+        "type": "Point"
+      },
+      "id": "85634f66c39634d943e58f60e5ecaedc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Walter Havey",
+        "Graduation Year": "1985",
+        "Company": "EMC Corp",
+        "City": "Hopkinton",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://platform.softwareone.com/files/vendor-logos/VND-9034-7317/b08e83a62ab7d165fb7e1cb8b8643e0f7b3074432608f762515b6853c263d1a7.webp"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.519447,
+          42.261456
+        ],
+        "type": "Point"
+      },
+      "id": "86b15f537bb60bf38eb19e7a3fec239c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Julianne Jeon",
+        "Graduation Year": "",
+        "Company": "Urban Grid",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://www.urbangridsolar.com/wp-content/uploads/2023/10/UG-Logo-No-BRUS.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "87de98746aafdcd5ff459876e5c17916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Michael Sands",
+        "Graduation Year": "",
+        "Company": "The Maker Group",
+        "City": "Westerly",
+        "Country": "USA",
+        "Industry": "Strategy",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwH3CJwysDKxHvsQg-kMyF_grsEqRdle7wjg&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.82729,
+          41.3776
+        ],
+        "type": "Point"
+      },
+      "id": "884ff59cd8ea15182a3acc2a27b106a0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Barry Osherow",
+        "Graduation Year": "1994",
+        "Company": "Level Equity",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://startupxplore.com/uploads/ff80808157434fbb01575753a4b50292-large.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "8b9d7f2ad6df12e0ebb9b321d3ff9fa3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Lisa Liu ",
+        "Graduation Year": "2018",
+        "Company": "LinkedIn",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://1000logos.net/wp-content/uploads/2023/01/LinkedIn-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "8df3360b0d32b6186bafe7ba0c8f8352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Lily Chi",
+        "Graduation Year": "2021",
+        "Company": "Boston Consulting Group",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://web-assets.bcg.com/dims4/default/a7425a2/2147483647/strip/true/crop/432x109+0+0/resize/768x194!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2Fcf%2F56%2F37f3302740138f48fea36a8a41b7%2Ftest-bcg-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "91c5c28416e7ad956b5be0f2e5a73aaa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Lauren Evershed",
+        "Graduation Year": "2018",
+        "Company": "Tacit Corp",
+        "City": "Toronto",
+        "Country": "Canada",
+        "Industry": "Tech",
+        "Logo": "https://media.licdn.com/dms/image/v2/C560BAQEul3ZQQVNP_w/company-logo_200_200/company-logo_200_200/0/1630664184445/tacit_corp_logo?e=2147483647&v=beta&t=gjNzCBeYJSigUvuUOOWs5ayNykyqp0dGFNx3jtIon2U"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.347015,
+          43.65107
+        ],
+        "type": "Point"
+      },
+      "id": "9281fae3ceaf009056c4c526ec761b6d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aaron Zhu",
+        "Graduation Year": "2023",
+        "Company": "Spotify",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Green.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "93e63ee91ed933a5e0a51cda35602998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mansi Kedia",
+        "Graduation Year": "2018",
+        "Company": "Stratedgy",
+        "City": "Mumbai",
+        "Country": "India",
+        "Industry": "Strategy",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd00iheF2qCAm4-eIrra13WvNUOWVEMq9Qow&s"
+      },
+      "geometry": {
+        "coordinates": [
+          72.877426,
+          19.07609
+        ],
+        "type": "Point"
+      },
+      "id": "95c3f9ebfd6e6c92befb84c7046420fc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Josh Sui",
+        "Graduation Year": "2020",
+        "Company": "Zhong Ou Asset Management",
+        "City": "Shanghai",
+        "Country": "China",
+        "Industry": "Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/C560BAQFnXoqhcNVLEA/company-logo_200_200/company-logo_200_200/0/1642448126535/_logo?e=1767225600&v=beta&t=vrf-NiiubGkxKWWM2Z6AifK8HioSLt3Wd6XW9JckSw4"
+      },
+      "geometry": {
+        "coordinates": [
+          121.46917,
+          31.224361
+        ],
+        "type": "Point"
+      },
+      "id": "96c7acd0609e57092cb3725fdf025fb5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sarah Tarta",
+        "Graduation Year": "2020",
+        "Company": "Boston Consulting Group",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://web-assets.bcg.com/dims4/default/a7425a2/2147483647/strip/true/crop/432x109+0+0/resize/768x194!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2Fcf%2F56%2F37f3302740138f48fea36a8a41b7%2Ftest-bcg-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "9863cf214c9da4fa53d01e3debd90482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Junhan Kim",
+        "Graduation Year": "2022",
+        "Company": "DART",
+        "City": "George Town",
+        "Country": "Cayman Islands",
+        "Industry": "Real Estate, Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/C560BAQFcNGPCRerQHg/company-logo_200_200/company-logo_200_200/0/1633366789610/dart_enterprises_cayman_islands_logo?e=1767225600&v=beta&t=WV12m4pBSNIhDEaUjSLbms5aOF1hkUvbkvQW3MFye0s"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.3819,
+          19.292997
+        ],
+        "type": "Point"
+      },
+      "id": "9895ce20daa2619000be49b641dbd9b8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Michael Bozza",
+        "Graduation Year": "2020",
+        "Company": "Mush Co",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://media.licdn.com/dms/image/v2/C4E0BAQEDMIpHN8yQ7Q/company-logo_200_200/company-logo_200_200/0/1659850126196/mush_co_logo?e=2147483647&v=beta&t=FC0jCXpUUBU-Q9p_bcUTEDuZEw_BA4CTSh1WZUas0jw"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "99a73e6a8b81ccb25c39d1133188e9ec"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Daniel Brassloff",
+        "Graduation Year": "2019",
+        "Company": "Neo Insurance Solutions",
+        "City": "Miami",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://kl-community.s3.amazonaws.com/organization/1718/110731/fd0bb6b3e5373f6d66f5681133cea67b.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.191788,
+          25.761681
+        ],
+        "type": "Point"
+      },
+      "id": "9a48410ff0d094b337bb7f3f1d5c0c2a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Marvin Damsma",
+        "Graduation Year": "1967",
+        "Company": "Keowee Advisors LLC",
+        "City": "Plainwell",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6AiWUVIf9ya1EePIJcm3eaCUzD5lA8Plxbw&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -85.6489,
+          42.44
+        ],
+        "type": "Point"
+      },
+      "id": "9a4b6f6af61c77eb2e2ba1cc100c2e38"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Amaya Ghoshal",
+        "Graduation Year": "2025",
+        "Company": "Goldman Sachs",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://1000logos.net/wp-content/uploads/2016/12/Goldman-Sachs-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "9accc4dd1f4f13618e98c23d5c8bc98d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Lucy Culleton",
+        "Graduation Year": "",
+        "Company": "Databricks",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "9e347dba064ae46b114d8635b9c33966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kimia Sadeghi",
+        "Graduation Year": "2020",
+        "Company": "Meadow Gold Dairies Hawaii",
+        "City": "Honolulu",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiSSFaTX8blRuZbqQGb7Ctl4_3-17hhTP63g&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -157.858093,
+          21.315603
+        ],
+        "type": "Point"
+      },
+      "id": "9f49e0edab10a5f9badaecfd8cb29d3d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Michael Gorman",
+        "Graduation Year": "2017",
+        "Company": "MassMutual",
+        "City": "Webster",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://yt3.googleusercontent.com/IxSQcrQZOKrsqhP4N5N_pjYPl2DyN1IuzRihaX1ieI02LJb23CBIh6dldjcvKjoLPlPKyZWw=s900-c-k-c0x00ffffff-no-rj"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.054398,
+          28.611198
+        ],
+        "type": "Point"
+      },
+      "id": "a0dc65b72a54a366af239da9facd3737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Anna B",
+        "Graduation Year": "2021",
+        "Company": "Magna Technology Group (MTG)",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4VEpdMTug1IqsaquruCeTXHrbj-FAlD21sMwJE7WSsH9V-VU9ScE8yVnetR6P4l2nnMs&usqp=CAU"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "a280606e03492463405e82601589adb7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Brianna Lynch",
+        "Graduation Year": "2016",
+        "Company": "CMRG",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT42lwvT_gmbilIE0yrV3yPHgLb24SFqMehRQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "a384279318f7c61dbe080e11d443e92b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Randy Hicks",
+        "Graduation Year": "",
+        "Company": "Alliance Equipment Finance",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1e8wqvGk_VOVP89YjvNnTh9md-y8C7_NLvg&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "a3d827b375be7aade0765fca3b178c65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Victoria Bills",
+        "Graduation Year": "2016",
+        "Company": "Allocraft AI",
+        "City": "Chicago",
+        "Country": "USA",
+        "Industry": "Entrepreneurship, Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/D560BAQFFBs6XplPfoQ/company-logo_100_100/B56ZlOI067J8AQ-/0/1757952561303/allocraftai_logo?e=2147483647&v=beta&t=qzLXABbHMcus1ShgOwtLzJyIQq016pkpEnfruF4kMkA"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.623177,
+          41.881832
+        ],
+        "type": "Point"
+      },
+      "id": "a709bcb3fb83f04b8db5380fbb6a4734"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sebastian Cabrera",
+        "Graduation Year": "2017",
+        "Company": "DELL",
+        "City": "Austin",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/1200px-Dell_Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -97.73333,
+          30.266666
+        ],
+        "type": "Point"
+      },
+      "id": "a925c9c41676d8e209cb78358553327e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Robert Vercollone",
+        "Graduation Year": "1977",
+        "Company": "Keller Williams Realty",
+        "City": "Newton",
+        "Country": "USA",
+        "Industry": "Real Estate",
+        "Logo": "https://img1.wsimg.com/blobby/go/11a77c6d-eb91-457b-a7c8-7b3d30e0af37/downloads/KW%20Realty%20Group%20Red%20%26%20Grey.png?ver=1765385069390"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.217133,
+          42.341042
+        ],
+        "type": "Point"
+      },
+      "id": "a96d2dc13da684b5e3f10a20833b3b45"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Chason Borges ",
+        "Graduation Year": "2016",
+        "Company": "Hukl Investments",
+        "City": "Las Vegas",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RfRenvp3jJJTO45WynzuOyXkdrazXjOs_Q&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -115.176468,
+          36.18811
+        ],
+        "type": "Point"
+      },
+      "id": "a9ea9419c212521e484d54cf22734718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Noor Mohamed",
+        "Graduation Year": "",
+        "Company": "Lincon Propety ",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Real Estate",
+        "Logo": "https://www.stonepoint.com/wp-content/uploads/lincoln-3.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "aa5f65a976e2f30631af4734de8c1a65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Scott Andersen",
+        "Graduation Year": "1990",
+        "Company": "Zapify LLC",
+        "City": "Los Angeles",
+        "Country": "USA",
+        "Industry": "Entrepreneurship, Marketing",
+        "Logo": "https://static.wixstatic.com/media/f2f910_81f734b0422743d18522d7c9ed8649bb~mv2.png/v1/fill/w_363,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20Green%20Letters.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.243683,
+          34.052235
+        ],
+        "type": "Point"
+      },
+      "id": "ab1d85f7f81349124583775000f89b89"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sergio Avila ",
+        "Graduation Year": "2023",
+        "Company": "PIMCO",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/PIMCO_Logo.svg/1280px-PIMCO_Logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "acff5d1da7aca2b1218ec48bc4866aa9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Fatima Alabdulmughni",
+        "Graduation Year": "2023",
+        "Company": "Thurgood Industries",
+        "City": "Austin",
+        "Country": "USA",
+        "Industry": "Strategy",
+        "Logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHVdzlTg1Ug5g/company-logo_200_200/company-logo_200_200/0/1700672469477/thurgood_industries_logo?e=1767225600&v=beta&t=7J_PLPus8ix_olubsCB5UlIqptNuYY7bzk1c98LFGkc"
+      },
+      "geometry": {
+        "coordinates": [
+          -97.73333,
+          30.266666
+        ],
+        "type": "Point"
+      },
+      "id": "adb777338f3449a3dae2533a29d49586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hailey Lee",
+        "Graduation Year": "2019",
+        "Company": "Winston & Strawn LLP",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Law",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/8/88/Winston_%26_Strawn_LLP_logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "ae84f2f12b5f2e3636c1459bd85acfa3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jillian Eckard",
+        "Graduation Year": "2019",
+        "Company": "Thermo Fisher Scientific",
+        "City": "Waltham",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Thermo_Fisher_Scientific_logo.svg/1200px-Thermo_Fisher_Scientific_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.2343,
+          42.375
+        ],
+        "type": "Point"
+      },
+      "id": "aede4c8ce8642b3a559429614d4864c1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kenzi Fukuda",
+        "Graduation Year": "2021",
+        "Company": "LinkedIn",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://1000logos.net/wp-content/uploads/2023/01/LinkedIn-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "af5121aee6823a57c4521e72cef79e44"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Yinmeng T",
+        "Graduation Year": "2018",
+        "Company": "Microsoft",
+        "City": "Mountain View",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.083855,
+          37.386051
+        ],
+        "type": "Point"
+      },
+      "id": "b044b7c2be4ceeb6f8e2584bcf08bc59"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Tia Goyal",
+        "Graduation Year": "2022",
+        "Company": "Wayfair",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Strategy",
+        "Logo": "https://companieslogo.com/img/orig/W-df75d44f.png?t=1720749388"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "b1b96e90f58735c2cf38d8799bef724f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Winston Budiman",
+        "Graduation Year": "",
+        "Company": "McKinsey & Company",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://cdn.cookielaw.org/logos/353d36fb-3a1c-4021-b831-ee6d50361d6a/07a8989e-cba1-4f60-a67a-0ffe9efc1b3a/5705935c-c99f-48d8-8aef-b78127f4aed3/mckinsey---company_owler_20190728_090718_original.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "b1cba78564b5b82d8e5d42cde1ed9548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Dev Pereira",
+        "Graduation Year": "2025",
+        "Company": "EY",
+        "City": "Chicago",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/EY_logo_2019.svg/1200px-EY_logo_2019.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.623177,
+          41.881832
+        ],
+        "type": "Point"
+      },
+      "id": "b378c69fb8c604e559b5c79f255a02d7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Derek Lee",
+        "Graduation Year": "2025",
+        "Company": "Carrier",
+        "City": "Florida",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://images.carriercms.com/image/upload/h_400/v1576864343/common/logos/carrier-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.760254,
+          27.994402
+        ],
+        "type": "Point"
+      },
+      "id": "b3c0dd202d0a322fdb48e6b848fcbc0c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aishwarya Suresh",
+        "Graduation Year": "2023",
+        "Company": "Morgan Stanley",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Morgan_Stanley_Logo_1.svg/1024px-Morgan_Stanley_Logo_1.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "b5221c75376657852cf857e422466e7a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Danielle Cataldo",
+        "Graduation Year": "",
+        "Company": "EF Go Ahead Tours",
+        "City": "Denver",
+        "Country": "USA",
+        "Industry": "Tourism",
+        "Logo": "https://play-lh.googleusercontent.com/sFr0Bha1SxvweL50vgDsKSdKOtMtuZy4W1mnz4fnxKzfxww2B5UOeqmjBwTFC9GaGg"
+      },
+      "geometry": {
+        "coordinates": [
+          -104.991531,
+          39.742043
+        ],
+        "type": "Point"
+      },
+      "id": "b5801935c18afeac6c4baf18b148dc82"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Justine Prophil",
+        "Graduation Year": "2024",
+        "Company": "DELL",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/1200px-Dell_Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "b6a95a4dd03559e8f239b3f190b16d8d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Robert Blumenfeld",
+        "Graduation Year": "",
+        "Company": "Generational Equity, LLC",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://media.licdn.com/dms/image/v2/C560BAQGGysIEW-E0Ig/company-logo_200_200/company-logo_200_200/0/1631386642639?e=2147483647&v=beta&t=HljXE6LgKBmwA0p_FQLQsEUHBJxN7XVvb_P5qBw2meY"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "b75c58b19adf00a6e5f4b8f0e5e028a9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "James Gentile",
+        "Graduation Year": "2023",
+        "Company": "Energy BPO Corp",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCAXahbyk3SYpAQ_MBZ_BY4O56nTDF7xcwBQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "b77bd2e614c1d7f1e22ca8eb59f4f6ee"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ansh Jain",
+        "Graduation Year": "2024",
+        "Company": "Moqa",
+        "City": "Dubai",
+        "Country": "UAE",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUrWEuxoEUJSKl9Tt_AxO8xUAndvQzgrvR6g&s"
+      },
+      "geometry": {
+        "coordinates": [
+          55.296249,
+          25.276987
+        ],
+        "type": "Point"
+      },
+      "id": "b7b71faf8824a717d351c53aa2b2767e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Brianna Wong",
+        "Graduation Year": "2016",
+        "Company": "EssenceMediacom",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHPGk0KisOHug/company-logo_200_200/B4EZlcMXcuIkAI-/0/1758188370225/essencemediacom_logo?e=2147483647&v=beta&t=9Q5sfMGcSOrTXI70cb0O8k_u9SKi4OtJz-QHjUSTrZ8"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "bb55769a8e187b84ac07a60ab73d7d71"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mark Wineck",
+        "Graduation Year": "1985",
+        "Company": "Aeris Proective Packaging Inc.",
+        "City": "Montreal",
+        "Country": "Canada",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThLQxlb5b6LKcM2fIZKuX4P63n0ggLgJuPA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.561668,
+          45.508888
+        ],
+        "type": "Point"
+      },
+      "id": "c301e92597e4efa19386c1a9c993768c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mathivadhani Harikrishnan",
+        "Graduation Year": "2019",
+        "Company": "Alpha FMC",
+        "City": "Denver",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcYvG_67S2xIlTmzC0pYmE5r9bmV5tCEbsSg&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -104.991531,
+          39.742043
+        ],
+        "type": "Point"
+      },
+      "id": "c3d8e6b829d824e9b63a4e4e4d66c00c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jenny Ho",
+        "Graduation Year": "2018",
+        "Company": "Extend",
+        "City": "Dallas",
+        "Country": "USA",
+        "Industry": "Strategy, Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/D560BAQHwYFVNd6BzbQ/company-logo_200_200/company-logo_200_200/0/1688770031717/helloextend_logo?e=2147483647&v=beta&t=fhmJDEGGZSx8UJQTRU-Rli9nn2SpsvKI7Gm9RXwoWKI"
+      },
+      "geometry": {
+        "coordinates": [
+          -96.808891,
+          32.779167
+        ],
+        "type": "Point"
+      },
+      "id": "c5411830e218d9e08fb123b0c0c90b83"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "John Gaito",
+        "Graduation Year": "",
+        "Company": "Market Watch, LLC",
+        "City": "Scottsdale",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://1000logos.net/wp-content/uploads/2024/09/MarketWatch-Emblem.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -111.925278,
+          33.501323
+        ],
+        "type": "Point"
+      },
+      "id": "c599a32c618a30afb83e93c1178d4728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bill Balicki",
+        "Graduation Year": "1990",
+        "Company": "Nexthink",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://cdn-ukwest.onetrust.com/logos/7c440d34-9369-47b8-ab2f-024b0f3e7d62/5e2d9ada-98f8-43d2-948d-5b86d0164004/cf37e1ef-3767-4b15-8ef9-98e1004c82e4/nexthink.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "c5cf749328cf47c1375ecda76658d126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mike Rothstein",
+        "Graduation Year": "2018",
+        "Company": "Millenium Global Investment",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Millennium_Logo_Wordmark.jpg/1600px-Millennium_Logo_Wordmark.jpg?20250326020919"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "c614386115374832234607668205e263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Rachel Ip",
+        "Graduation Year": "2023",
+        "Company": "Bank of America",
+        "City": "Los Angeles",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bank_of_America_logo.svg/2560px-Bank_of_America_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.243683,
+          34.052235
+        ],
+        "type": "Point"
+      },
+      "id": "c7848d1f53fd349b35ced9c795bc497f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Paul MacKinnon",
+        "Graduation Year": "",
+        "Company": "MacKinnon Consulting LLC",
+        "City": "Lincoln",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://static.wixstatic.com/media/d84ae0_3e2013e910904ce4a32298ad48e588e2~mv2.jpg/v1/fill/w_174,h_174,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/d84ae0_3e2013e910904ce4a32298ad48e588e2~mv2.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -96.681679,
+          40.806862
+        ],
+        "type": "Point"
+      },
+      "id": "c790065aa1563c303d14815c965e9d4c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Miranda Ditmore",
+        "Graduation Year": "2019",
+        "Company": "Attensi",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3FvJ_FbHGQnHTmgAxBsFwIgz1JwYfJaLsg&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "c7cf95c188eec8c9eef7f75b8bdeb749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Daniel Coley",
+        "Graduation Year": "2018",
+        "Company": "Cofounders Capital",
+        "City": "Atlanta",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1444846384/udnzks63t6ivcn0nn0br.png?ik-sanitizeSvg=true"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.38633,
+          33.753746
+        ],
+        "type": "Point"
+      },
+      "id": "c8495c66db1cf3b8cea0e9147eee49da"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ames Mullendore",
+        "Graduation Year": "2021",
+        "Company": "The Clear Blue Company",
+        "City": "Nashville",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://theclearbluecompany.com/wp-content/uploads/2023/12/CBC_Logo-Lockup_Blue-Black.svg"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.7816,
+          36.16266
+        ],
+        "type": "Point"
+      },
+      "id": "c8b3796bf5a4f4612fd0b054d40e300d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Alexis Ierardi",
+        "Graduation Year": "2016",
+        "Company": "CyberArk",
+        "City": "Newton",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://cdn.prod.website-files.com/5fa58eb04302c6e6eb23144c/5fe0ff633ba1bf4e1fe4563f_CyberArk-logo-700x477.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.217133,
+          42.341042
+        ],
+        "type": "Point"
+      },
+      "id": "cb1d3403d60f20f510de70fdabb69154"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Palida Prasitanond",
+        "Graduation Year": "2022",
+        "Company": "Boston Consulting Group",
+        "City": "Bangkok",
+        "Country": "Thailand",
+        "Industry": "Consulting",
+        "Logo": "https://web-assets.bcg.com/dims4/default/a7425a2/2147483647/strip/true/crop/432x109+0+0/resize/768x194!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2Fcf%2F56%2F37f3302740138f48fea36a8a41b7%2Ftest-bcg-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          100.523186,
+          13.736717
+        ],
+        "type": "Point"
+      },
+      "id": "cc84fbc469153bff2ec1d0b51535fac0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Charles Kaywood",
+        "Graduation Year": "1974",
+        "Company": "Morgan Stanley",
+        "City": "New Haven",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJG6fLPBUdvvh8VWnNXub1Eq-zBsQKfR5X9g&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -72.929916,
+          41.310726
+        ],
+        "type": "Point"
+      },
+      "id": "cdef69a7a3758830166d3c4e7d52cdaf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Thomas Borenholtz ",
+        "Graduation Year": "2023",
+        "Company": "UCO TRADING SPAIN SL",
+        "City": "Miami",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://usedoilco.com/wp-content/uploads/2023/10/LOGO-10-YEARS-UCO-foot.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -80.191788,
+          25.761681
+        ],
+        "type": "Point"
+      },
+      "id": "ce33f96b2a67dc611101e24f5ff68a27"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ambika Kathuria",
+        "Graduation Year": "",
+        "Company": "Pegasystems",
+        "City": "Los Angeles",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://www.drupal.org/files/pega_logo_vertical_positive_rgb%20%285%29.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.243683,
+          34.052235
+        ],
+        "type": "Point"
+      },
+      "id": "ce4d83ab12aa433bf9b0ec99db3fe1a5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Christiana Kalotihos",
+        "Graduation Year": "2024",
+        "Company": "Tracksmith",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://www.blacktoerunning.com/cdn/shop/files/Tracksmoith_Logo_BLK_crop-2_1400px_1080x.jpg?v=1664299614"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "d379e9f6d095b133b6c44de4b412aa05"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Daniel Wang",
+        "Graduation Year": "2023",
+        "Company": "TikTok",
+        "City": "Seattle",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://sydneyaimeetup.org/img/sponsor/TikTok-logo-CMYK-Horizontal-Black.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.335167,
+          47.608013
+        ],
+        "type": "Point"
+      },
+      "id": "d71fe48b605d5b61523db21bca6946fa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Gary Marmer",
+        "Graduation Year": "",
+        "Company": "ForceTen Marketing",
+        "City": "Dorset",
+        "Country": "USA",
+        "Industry": "Entrepreneurship, Marketing",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9Ni5F9gdYQbbR2yTRLS6eGj_ihK5mRnKBQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.099594,
+          43.256207
+        ],
+        "type": "Point"
+      },
+      "id": "d7bf4703b88e0835382ad27eb8228c41"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Catherine Li",
+        "Graduation Year": "2018",
+        "Company": "Columbia Sportswear Company",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTllWEB00urZDUpW5Ck4HKI7m5j2vDWYx0bDA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "d842d89b4247d5b009c1e35baa055c66"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Vinita Atkins",
+        "Graduation Year": "2015",
+        "Company": "2K",
+        "City": "Dublin",
+        "Country": "Ireland",
+        "Industry": "Tech",
+        "Logo": "https://images.ctfassets.net/wn7ipiv9ue5v/4B7W3yA1r5sZtabMiOyfL/81fba3f063d4e5fb4897b86fa4736473/2K_logo_-_corp.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -6.266155,
+          53.35014
+        ],
+        "type": "Point"
+      },
+      "id": "d8a56ce669c392410d9d80fc82b52f09"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Grant Kehres",
+        "Graduation Year": "1975",
+        "Company": "BocaClosings",
+        "City": "Florida",
+        "Country": "USA",
+        "Industry": "Law",
+        "Logo": "https://bocaclosings.com/wp-content/uploads/2024/09/Boca-Closings-3-Outlinesa-01-2048x1001.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -81.760254,
+          27.994402
+        ],
+        "type": "Point"
+      },
+      "id": "d93531fae18dadeffd89f5ee1da8d0de"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Lily Chi",
+        "Graduation Year": "2021",
+        "Company": "CarGurus",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://cdn.worldvectorlogo.com/logos/logo-cargurus.svg"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "d94e3ad9267cd15963586094f710af88"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Zack Levy",
+        "Graduation Year": "2022",
+        "Company": "Bain Capital",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://www.baincapitalprivateequity.com/sites/baincapitalprivateequity.com/themes/custom_theme/PE/assets/images/bcpe_logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "da29a3904bf6ed515cd704a1c9ae20df"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nitya Mulani",
+        "Graduation Year": "2020",
+        "Company": "Staples",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Strategy",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91S-qPO762cHHd7p-UUsuAB7cvmD68TFRig&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "dadcdb3046502eeafb411f8ca3f80266"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mike Horbowy ",
+        "Graduation Year": "2017",
+        "Company": "Jefferies",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Jefferies_logo.svg/1200px-Jefferies_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "db49e5a530679e50eec2a6425b294c98"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hannah Wu",
+        "Graduation Year": "2024",
+        "Company": "SAMY",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://cdn.shopify.com/s/files/1/0580/1813/6164/files/SAMY_Logotipo_2.png?height=628&pad_color=fff&v=1651584778&width=1200"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "dc03564b7bb5336496ffb5ef936b1e49"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Tim Keane",
+        "Graduation Year": "1986",
+        "Company": "Northeast Investment Advisors",
+        "City": "Framingham",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVULqSQEuRfbzOS3QYLTSmY4yuq23kKZKOA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.423233,
+          42.280418
+        ],
+        "type": "Point"
+      },
+      "id": "dc5a0d864f435920110729024c4a37a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Madison Roberts",
+        "Graduation Year": "2025",
+        "Company": "Invesco",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Real Estate",
+        "Logo": "https://cdn.cookielaw.org/logos/e3ce9302-37fb-4a9f-9d3a-8dd0d1946f17/d892f2dd-7cb7-4f70-aaf5-f48b2cc031aa/6a84c712-2e1e-4ed7-9f5f-5c8f1a4052a2/invesco1.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "defe9a1e8dee4eacf379e9f05b01294e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kirishika Krishnarajah",
+        "Graduation Year": "2019",
+        "Company": "ALKU",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Sales",
+        "Logo": "https://www.alku.com/wp-content/uploads/2022/06/ALKUNewLogo%E2%80%93RedBlack%E2%80%93WithTagline-01.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "df324ed751952ba82c928c2586ef3950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kate Zhong",
+        "Graduation Year": "2023",
+        "Company": "Kaseya",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Kaseya_Limited.svg/2560px-Logo_of_Kaseya_Limited.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "e076ba69e76aab0292b893b38d3fb422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aryan Goyanka",
+        "Graduation Year": "2026",
+        "Company": "Millenium Global Investment",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Millennium_Logo_Wordmark.jpg/1600px-Millennium_Logo_Wordmark.jpg?20250326020919"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "e14b25ef1fa14bec14e5f885348f163f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Paul Han",
+        "Graduation Year": "2019",
+        "Company": "DTRIC Insurance Company",
+        "City": "Honolulu",
+        "Country": "Hawaii",
+        "Industry": "Finance",
+        "Logo": "https://www.dtric.com/wp-content/uploads/2019/03/DTRIC-logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -157.858093,
+          21.315603
+        ],
+        "type": "Point"
+      },
+      "id": "e1a1572539bc99a977a108c5f9c9f0d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kristina Yu",
+        "Graduation Year": "2024",
+        "Company": "Benefit Cosmetics",
+        "City": "San Francisco",
+        "Country": "USA",
+        "Industry": "Marketing",
+        "Logo": "https://diversityjobsgroup.com/wp-content/uploads/2024/01/Benefit_Wordmark_RGB_BenefitPink-1.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.431297,
+          37.773972
+        ],
+        "type": "Point"
+      },
+      "id": "e1d2af5e31e09500c4a9fd97c9bd72cb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Annie Yang",
+        "Graduation Year": "2024",
+        "Company": "Suvoda",
+        "City": "Cupertino",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/qmuivqwlbm3btagexora?ik-sanitizeSvg=true"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.0385,
+          37.3172
+        ],
+        "type": "Point"
+      },
+      "id": "e26c8c5819e6c577fa367ee83ef0d490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Pallavi Pathak",
+        "Graduation Year": "2019",
+        "Company": "Amazon",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "e41812ff2611ab09ff4d8e554854d8c0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Wendy Posada",
+        "Graduation Year": "2017",
+        "Company": "HP",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/480px-HP_logo_2012.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "e719faea95d0cdf591346a46635aeae3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "John Reardon",
+        "Graduation Year": "2004",
+        "Company": "Stowe & Degon LLC",
+        "City": "Westborough",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCHzSp55axzD7malm0wSu_6UY3vh6YcjzVA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.6162,
+          42.2695
+        ],
+        "type": "Point"
+      },
+      "id": "e838b54560e299edb046fbb289690c16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sidney Jaury",
+        "Graduation Year": "2023",
+        "Company": "monrue store",
+        "City": "Jakarta",
+        "Country": "Indonesia",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyciDarW17PaNhDUtLgd-xfT2GKJhNUu0avw&s"
+      },
+      "geometry": {
+        "coordinates": [
+          106.816666,
+          -6.2
+        ],
+        "type": "Point"
+      },
+      "id": "e9065a96753b6127bdb0e4277deb7982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "James Eads",
+        "Graduation Year": "",
+        "Company": "The United Methodist Credit Union",
+        "City": "Richmond",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24kxRujUJ4dmWf16PvDMMjwnxg2kL406hGA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.434769,
+          37.54129
+        ],
+        "type": "Point"
+      },
+      "id": "e9de6f839f005efabc0b8b6b6ffd776f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jonathan Logrippo",
+        "Graduation Year": "2022",
+        "Company": "WHOOP",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WHOOP_Logo_Black.svg/1200px-WHOOP_Logo_Black.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "e9e633428a274c847d5f046281607025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Clark Lee",
+        "Graduation Year": "2019",
+        "Company": "RBC Capital Markets",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://pbs.twimg.com/profile_images/1807849541519265795/OKN_3u92.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "e9f06acf50b81c1070e5ebc461b52f57"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Christina Chen",
+        "Graduation Year": "2025",
+        "Company": "Experian",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Tech",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Experian_logo.svg/2560px-Experian_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "ea3cbd6a88956999c2a53dfc9630b44d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mark Avery",
+        "Graduation Year": "1984",
+        "Company": "FAT Brands Inc.",
+        "City": "Beverly Hills",
+        "Country": "USA",
+        "Industry": "Operations",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGKUqrZKBCAyspSFC37acplNrN3GOkpRQIQ&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.400352,
+          34.07362
+        ],
+        "type": "Point"
+      },
+      "id": "eb16329249413c9eff29bf35a858a64a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mario Ricciardelli",
+        "Graduation Year": "1989",
+        "Company": "RoostUp",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Entrepreneurship",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMa1egNLIsylyuDwybIiSocdIZRsGsKgRtiw&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "f035a95836bdded8730b8d0ce1a6feb2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Spencer Griffin",
+        "Graduation Year": "2020",
+        "Company": "Lowe-Martin",
+        "City": "Ottawa",
+        "Country": "Canada",
+        "Industry": "Tech",
+        "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuvFzXY9nI01OLI1KgU5FgNJ7gDH16wqZUUA&s"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.695,
+          45.424721
+        ],
+        "type": "Point"
+      },
+      "id": "f07fd2db368daf4cb3e7b517e9da9270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nadia Kim",
+        "Graduation Year": "2020",
+        "Company": "MarqVision",
+        "City": "Seoul",
+        "Country": "South Korea",
+        "Industry": "Tech",
+        "Logo": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/137854b91a5f4514b083ce280289a1a4?ik-sanitizeSvg=true"
+      },
+      "geometry": {
+        "coordinates": [
+          127.024612,
+          37.5326
+        ],
+        "type": "Point"
+      },
+      "id": "f4bc9be1b883ddc51ba11962c79e23e0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Aiswarya Arul",
+        "Graduation Year": "2020",
+        "Company": "IBM",
+        "City": "Boston",
+        "Country": "USA",
+        "Industry": "Consulting",
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/960px-IBM_logo.svg.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ],
+        "type": "Point"
+      },
+      "id": "f591e411adc6a862bd0efe3f69b3b22c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Luvish Gupta",
+        "Graduation Year": "2023",
+        "Company": "BlackRock",
+        "City": "New York City",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://logos-world.net/wp-content/uploads/2023/02/BlackRock-Logo.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.006,
+          40.7128
+        ],
+        "type": "Point"
+      },
+      "id": "f59f19dcbe2727b5c2718242711808c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Dennis Brewster",
+        "Graduation Year": "1981",
+        "Company": "JDH Advisors",
+        "City": "San Diego",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://static.fmgsuite.com/media/images/82d736e7-4359-4d0e-ad66-f1e4a7f540ec.png"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.161087,
+          32.715736
+        ],
+        "type": "Point"
+      },
+      "id": "f876eb5c0a5e87ae26598256460444be"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Paul Leyden",
+        "Graduation Year": "",
+        "Company": "Oppenheimer & Co. Inc.",
+        "City": "Portsmouth",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://www.acg.org/sites/default/files/styles/large/public/2021-09/Screen%20Shot%202021-09-10%20at%203.43.40%20PM.png?itok=jqkt-dC_"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.298271,
+          36.835426
+        ],
+        "type": "Point"
+      },
+      "id": "fa8b4e4e8188f16a13b0156278484eb9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Geraldi Pranata",
+        "Graduation Year": "2020",
+        "Company": "Dwipayana Capital Group",
+        "City": "Jakarta",
+        "Country": "Indonesia",
+        "Industry": "Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHmF6WF5sogUQ/company-logo_100_100/B4EZfEVTQdGwAQ-/0/1751345608303?e=2147483647&v=beta&t=XP2ZE6GFGq9g37WBSaSjXTmB8R412Iqe6hjTqIlHTfs"
+      },
+      "geometry": {
+        "coordinates": [
+          106.816666,
+          -6.2
+        ],
+        "type": "Point"
+      },
+      "id": "fc8bef27f4dca0170b96da425210c97a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "David Morris",
+        "Graduation Year": "",
+        "Company": "Pine Street Capital Partners",
+        "City": "Wellesley",
+        "Country": "USA",
+        "Industry": "Finance",
+        "Logo": "https://media.licdn.com/dms/image/v2/D560BAQE9OZM83iw5Tw/company-logo_200_200/company-logo_200_200/0/1722535468289/pine_street_capital_partners_logo?e=2147483647&v=beta&t=uylRUSYpS__QxogCAhsRUUKXepUzRnaYdHfcTYXkLYQ"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.300201,
+          42.299911
+        ],
+        "type": "Point"
+      },
+      "id": "fd2dd153590c067e1b31d63c365653c5"
+    }
+  ],
+  "type": "FeatureCollection"
+}
